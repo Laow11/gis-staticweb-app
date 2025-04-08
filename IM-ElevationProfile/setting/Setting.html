@@ -1,0 +1,98 @@
+<div>
+  <div class="error-message-div" data-dojo-attach-point="errorMessage"></div>
+  <div class="url-section" style="display: none">
+    <div class="label jimu-float-leading" title="${nls.taskUrl}">ProfileTask url</div>
+    <div class="service-browser jimu-float-trailing">
+      <table cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;">
+        <tbody>
+          <tr>
+            <td style="width:auto;">
+              <input type="text" data-dojo-type="jimu/dijit/ServiceURLInput" data-dojo-attach-point="urlTextBox"
+                data-dojo-props="style:{width:'100%'}" required="true" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="url-section">
+    <div class="label jimu-float-leading" title="${nls.taskUrl}">DEM url</div>
+    <div class="service-browser jimu-float-trailing">
+      <table cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;">
+        <tbody>
+          <tr>
+            <td style="width:auto;">
+              <input type="text" data-dojo-type="jimu/dijit/ServiceURLInput" data-dojo-attach-point="urlDemTextBox"
+                data-dojo-props="style:{width:'100%'}" required="true" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="max-samples-section">
+    <div class="label jimu-float-leading" title="${nls.taskUrl}">${nls.setting_samples_title}</div>
+    <div class="max-samples jimu-float-trailing">
+      <table cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;">
+        <tbody>
+          <tr>
+            <td style="width:auto;">
+
+              <div data-dojo-attach-point="maxSamples" data-dojo-type="dijit/form/NumberTextBox"
+                data-dojo-props="constraints:{min:1,places:0},style:{width:'100%'},value:1000"></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="initial-step-value-section">
+    <div class="label jimu-float-leading" title="${nls.taskUrl}">${nls.setting_initial_step_title}</div>
+    <div class="initial-step-value jimu-float-trailing">
+      <table cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;">
+        <tbody>
+          <tr>
+            <td style="width:auto;">
+              <div data-dojo-attach-point="stepInitialValue" data-dojo-type="dijit/form/NumberTextBox"
+                data-dojo-props="constraints:{min:1,places:0},style:{width:'100%'},value:1000"></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="url-geo-section">
+    <div class="label jimu-float-leading" title="${nls.taskGeoUrl}">${nls.taskGeoUrl}</div>
+    <div class="service-browser jimu-float-trailing">
+      <table cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;">
+        <tbody>
+          <tr>
+            <td style="width:auto;">
+              <input type="text" data-dojo-type="jimu/dijit/ServiceURLInput" data-dojo-attach-point="urlGeoTextBox"
+                data-dojo-props="style:{width:'100%'}" required="true" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div data-dojo-attach-point="_chartNode" class="widget-elevation-profile-ChartNode" style="display:none !important; ">
+  </div>
+  <div style="margin-top:20px;" style="display:none !important;">
+    <div class="btn-chart-props-section" data-dojo-attach-point="btnChartProps"
+      style="margin-right:10px; display:none !important;">
+      <span class="btn-edit-icon" style="display:none;"></span>
+      <span class="btn-edit-label" style="display:none;">${nls.editChartProperties}</span>
+    </div>
+    <div class="btn-sym-section" data-dojo-attach-point="btnSymLine"
+      style="margin-right:10px; display:none !important;">
+      <span class="btn-edit-icon" style="display:none;"></span>
+      <span class="btn-edit-label" style="display:none;">${nls.editDefaultSym}</span>
+    </div>
+  </div>
+</div>

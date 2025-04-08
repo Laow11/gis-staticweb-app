@@ -1,0 +1,177 @@
+<div id="mElevationProfileWidget">
+    <div data-dojo-attach-point="tabMain" id="mElevationProfileWidgetTabs">
+        <!-- INFO : Este div es el que controla el Toast Error-Scale-->
+        <div id="elevationProfile-dxToastError"></div>
+        <div class="${baseClass} profile-tab-node" data-dojo-attach-point="tabNode1" id="tabNode1">
+            <div data-dojo-attach-point="_measureNode"></div>
+
+            <!-- <div class="dx-field iElevationProfile_Resolution" style="display:none;">
+                <div class="profile-conf-label">
+                    <span id="iElevationProfile_spanMeasureType" class="dx-field-label" style="width: 90%;">${nls.form.mDEMResolution}</span>
+                    <img id="refreshWarning1" alt="" src="" title="${nls.tooltips.actionTriggersUpdate}" style="width:21px; height:21px;" />
+                </div>
+                <div class="profile-conf-field">
+                    <div id="iElevationProfile_dxSelectBoxResolution" class="dx-field-value"> </div>
+                </div>
+                <br />
+            </div> -->
+            <!-- <div class="dx-field iElevationProfile_Measure" style="display:none;">
+                <div class="profile-conf-label">
+                    <span id="iElevationProfile_spanMeasureType" class="dx-field-label" style="width: 90%;">${nls.form.mMeasureUnit}</span> -->
+                    <!--<img id="refreshWarning1"  alt="" src="" title="${nls.tooltips.actionTriggersUpdate}" style="width:21px; height:21px;" />-->
+                <!-- </div>
+                <div class="profile-conf-field">
+                    <div id="iElevationProfile_dxSelectBoxMeasureType" class="dx-field-value"> </div>
+                </div>
+                <br />
+            </div> -->
+
+
+            <div class="dx-field iElevationProfile_UseSteps">
+                <div class="profile-conf-label">
+                    <span id="iElevationProfile_spanUseSteps" class="dx-field-label" style="width: 100%;">${nls.form.spanUseSteps}</span>
+                </div>
+                <div class="profile-conf-field">
+                    <div id="iElevationProfile_dxSwitchUseStepUseSteps" class="dx-field-value">
+                    </div>
+                </div>
+                <br />
+            </div>
+
+
+            <!--<div class="dx-field iElevationProfile_UseStepWithDraw">
+                <div class="profile-conf-label">
+                    <span id="iElevationProfile_spanUseStepWithDraw" class="dx-field-label" style="width: 100%;">${nls.form.spanUseStepWithDraw}</span>
+                </div>
+                <div class="profile-conf-field">
+                    <div id="iElevationProfile_dxSwitchUseStepWithDraw" class="dx-field-value">
+                    </div>
+                </div>
+
+            </div>
+            <br />
+
+            <div class="dx-field iElevationProfile_UseStepWithSelect">
+                <div class="profile-conf-label">
+                    <span id="iElevationProfile_spanUseStepWithSelect" class="dx-field-label" style="width: 100%;">${nls.form.spanUseStepWithSelect}</span>
+                </div>
+                <div class="profile-conf-field">
+                    <div id="iElevationProfile_dxSwitchUseStepWithSelect" class="dx-field-value">
+                    </div>
+                </div>
+
+            </div>
+            <br />-->
+
+            <div class="dx-field iElevationProfile_StepValue elevation-value-row">
+                <div class="profile-conf-label">
+                    <span id="iElevationProfile_spanStepValue" class="dx-field-label elevation-value-column" style="width: 100%;">${nls.form.mStepValue}</span>
+                </div>
+                <div class="profile-conf-field">
+                    <div id="iElevationProfile_inputStepValue" class="dx-field-value elevation-value-column"> </div>
+                    <!--<span id="agregado" >[m]</span>-->
+                </div>
+                <br />
+            </div>
+
+
+            <!--<div class="dx-field iElevationProfile_StepType">
+            <div class="profile-conf-label">
+                <span id="iElevationProfile_spanStepType" class="dx-field-label" style="width: 100%;">${nls.form.mStepType}</span>
+            </div>
+            <div class="profile-conf-field">
+                <div id="iElevationProfile_dxSelectBoxStepType" class="dx-field-value">
+                </div>
+            </div>
+            <br />
+        </div>-->
+
+            <!-- <div class="dx-field iElevationProfile_MeasureSegmentInformation elevation-value-row">
+                <div class="profile-conf-label">
+                    <span id="iElevationProfile_spanSegmentTitle" class="dx-field-label elevation-value-column" style="width: 100%;">${nls.form.mSegmentTitle}</span>
+                </div>
+                <div class="profile-conf-field">
+                    <span id="iElevationProfile_spanSegmentLength" class="dx-field-value elevation-value-column"> 0.00 [m] </span>
+                </div>
+                <br />
+            </div> -->
+            <div class="dx-field iElevationProfile_MeasureLineInformation">
+                <div class="profile-conf-label">
+                    <span id="iElevationProfile_spanLineTitle" class="dx-field-label" style="width: 100%;">${nls.form.mLineTitle}</span>
+                </div>
+                <div class="profile-conf-field">
+                    <span id="iElevationProfile_spanLineLength" class="dx-field-value"> 0.00 [m]</span>
+                </div>
+                <br />
+            </div>
+            <div class="dx-field iElevationProfile_MeasureSamplesInformation elevation-value-row">
+                <div class="profile-conf-label">
+                    <span id="iElevationProfile_spanSamplesTitle" class="dx-field-label elevation-value-column" style="width: 100%;">${nls.form.mSamplesTitle}</span>
+                </div>
+                <div class="profile-conf-field">
+                    <span id="iElevationProfile_spanSamplesLength" class="dx-field-value elevation-value-column"> 0 </span>
+                </div>
+                <br />
+            </div>
+            <div class="dx-field iElevationProfile_Tools" class="profile-conf-tools">
+                <!--<div class="profile-conf-label-buttons">
+                <span id="iElevationProfile_spanMeasureType" class="dx-field-label" style="width: 100%;">${nls.form.mTool}</span>
+            </div>-->
+                <div class="profile-conf-buttons">
+                    <div class="button-section button-section-left">
+                        <div id="iElevationProfile_drawPolyline"></div>
+                        <div style="width:20px; display: inline-block;"></div>
+                        <!--<button id="iElevationProfile_drawFreeHandPolyline"></button>-->
+                        <div id="iElevationProfile_selection"></div>
+                    </div>
+                    <div class="button-section button-section-right">
+                        <div id="iElevationProfile_dxConfirmButton"></div>
+                    </div>
+                </div>
+                <br />
+            </div>
+        </div>
+        <div class="${baseClass} profile-tab-node" data-dojo-attach-point="tabNode2" id="tabNode2">
+            <div class="result-div" id="results_label" data-dojo-attach-point="divResult" style="display:none;">
+                <!-- GGO: Display None-->
+                <label data-dojo-attach-point="divResultMessage">${nls.chartLabel}</label>
+            </div>
+            <div class="result-div" id="results_menu">
+                <a style="float:right; margin-right:10px" href="#" data-dojo-attach-point="btnDownload">${nls.download}</a>
+                <div class="mov-suelos-floatbtn-x elevation-profile-result-action-button"
+                     data-dojo-attach-event="click:_onBtnMenuClicked"
+                     data-dojo-attach-point="divOptions"
+                     title="${nls.resultactions}"
+                     style="display:none;">
+                    <i id="divOptions-img" class="fas fa-caret-square-down"></i>
+                </div>
+                <div class="mov-suelos-floatbtn-x elevation-profile-grid-action-button"
+                     data-dojo-attach-event="click:_onBtnGridSwitchClicked"
+                     data-dojo-attach-point="divGridSwitch"
+                     title="${nls.gridaction}" style="display:none;">
+                    <i id="divGridSwitch-img" class="fas fa-table"></i>
+                </div>
+                <!--<a href="javascript:void()" class="mov-suelos-floatbtn tool-closed" id="mov-suelos-select" title="Ver movimientos de suelo realizados">
+                    <i id="mov-suelos-select" class="fas fa-bars"></i>
+                </a>
+                <a href="javascript:void()" class="mov-suelos-floatbtn tool-closed" id="mov-suelos-select" title="Ver movimientos de suelo realizados">
+                    
+                </a>-->
+                
+
+            </div>
+            <!--<h4 style="text-align: center;">${nls.chart.title}</h4>-->
+            <div data-dojo-attach-point="_chartNode" id="results_chart" class="${baseClass}ChartNode widget-elevation-profileChartNode-50"></div>
+            <div id="im_data_grid">
+                <!--<h4 style="text-align: center;  margin-top: 2px;">${nls.grid.title}</h4>-->
+                <div id="_dxDataGridNode"></div>
+            </div>
+
+
+            <div data-dojo-attach-point="progressbar" id="results_progressbar"></div>
+        </div>
+    </div>
+    <div id="indicaciones-popup">
+        <b>Haz click para empezar a dibujar la polilínea</b>
+    </div>
+</div>

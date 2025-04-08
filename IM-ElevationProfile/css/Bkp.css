@@ -1,0 +1,491 @@
+﻿/*@import url("../../../libs/devExpress/css/all.css");*/
+@import url("../../../libs/devExpress/css/dx.common.css");
+@import url("../../../libs/devExpress/css/generic.light-compact.elevation_profile.css");
+
+/***/
+
+#_dxDataGridNode .dx-datagrid-rowsview.dx-scrollable .dx-scrollable-content {
+  z-index: auto;
+}
+#_dxDataGridNode .dx-datagrid-rowsview .dx-scrollable-scrollbar {
+  z-index: auto;
+}
+
+/***/
+
+.dijitToasterMessage{ 
+    color:#fff;
+}
+
+.dijitToasterContent {
+    padding:1em;
+    padding-top:0.25em;
+    background:#000;
+    -ms-border-radius: 0;
+    border-radius: 0;
+}
+
+.text_section{
+    font-size: 14px;
+    text-decoration: underline;
+    font-family: 'Helvetica Neue', 'Segoe UI', Helvetica, Verdana, sans-serif;
+}
+
+.center_button{
+    display: table !important;
+    margin: 0 auto !important;
+}
+
+
+#widgetiElevationProfile_Row3{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#widgetiElevationProfile_Row5{
+    /*margin-top: 10px;*/
+}
+
+.labelwidgetiElevationProfile_Row5.dx-field-label {
+    width: 60% !important;
+}
+
+#widgetiElevationProfile_Row6{
+    /*margin-bottom: 0px;*/
+}
+#widgetiElevationProfile_Row6{
+    /*margin-bottom: 0px;*/
+}
+
+.iElevationProfile_Measure{
+    width:100%;
+    display: inline-block;
+    margin-top: 8px !important;
+}
+.iElevationProfile_Resolution{
+    width:100%;
+    display: inline-block;
+    margin-top: 8px !important;
+}
+.iElevationProfile_Tools{
+    /*width:29%;
+    display: inline-block;
+    float: right;*/
+}
+
+
+#iElevationProfile_spanMeasureType{
+    display: inline-block;
+    font-weight:bold;
+}
+
+
+#iElevationProfile_dxSelectBoxMeasureType{
+    /*display: inline-block;*/
+    /*height: 23px !important;*/
+    background: white;
+}
+#iElevationProfile_dxSelectBoxResolution{
+    /*display: inline-block;
+    height: 23px !important;*/
+    background: white;
+}
+
+.esriElevationProfile .esriElevationProfileInfoNode {
+    visibility: hidden !important; 
+}
+
+.div-hide {
+    visibility: hidden;    
+}
+
+#i_AnalisisLocacion_zoom_span{
+    font-weight:bold;
+    padding-top: 15px;
+    width: 27% !important;
+}
+
+#i_AnalisisLocacion_dxbuttonZoom10000{
+    margin-left: 28px;
+}
+
+#i_AnalisisLocacion_type_span{
+    font-weight:bold;
+    width: 27% !important;
+}
+
+#i_AnalisisLocacion_dxradiogroupType{
+    display: inline-block;
+    padding-top: 6px;
+}
+
+/* ReSharper disable once CssNotResolved */
+#i_AnalisisLocacion_dxradiogroupType .dx-radiobutton:first,
+#i_AnalisisLocacion_dxradiogroupType .dx-radiogroup-horizontal .dx-radiobutton{
+    margin-right: 46px !important;
+}
+
+#i_AnalisisLocacion_rotate_span{
+    display: inline-block;
+    font-weight:bold;
+    width: 27% !important;
+}
+
+.iElevationProfile_drawPolylineicon {
+    display: inline-block;
+    background-image: url(../images/iElevationProfile_drawPolylineicon24.png) !important;
+    background-position: 0px;
+    width: 24px;
+    height: 24px;
+}
+
+.iElevationProfile_drawPolylineicon_active{
+    display: inline-block;
+    background-image: url(../images/iElevationProfile_drawPolylineicon_active24.png) !important;
+   background-position: 0px;
+    width: 24px;
+    height: 24px;
+}
+
+.iElevationProfile_drawFreeHandPolylineicon {
+    display: inline-block;
+    background-image: url(../images/iElevationProfile_drawFreeHandPolylineicon_24.png) !important;
+    background-position: 0px;
+    width: 24px;
+    height: 24px;
+}
+
+.iElevationProfile_drawFreeHandPolylineicon_active{
+    display: inline-block;
+    background-image: url(../images/iElevationProfile_drawFreeHandPolylineicon_active24.png) !important;
+   background-position: 0px;
+    width: 24px;
+    height: 24px;
+}
+
+.iElevationProfile_selectionicon {
+    display: inline-block;
+    background-image: url(../images/iElevationProfile_selectionicon_24.png) !important;
+    background-position: 0px;
+    width: 24px;
+    height: 24px;
+}
+
+.iElevationProfile_selectionicon_active{
+    display: inline-block;
+    background-image: url(../images/iElevationProfile_selectionicon_active24.png) !important;
+   background-position: 0px;
+    width: 24px;
+    height: 24px;
+}
+
+
+.iElevationProfile_drawPolyline{
+    width: 11%;
+    display: inline-block;
+    /*background-color: lightgray;*/
+    vertical-align: top;
+    padding-top: 5%;
+}
+
+#i_AnalisisLocacion_dxbuttonGraficar{
+    margin-top: 2px;
+}
+
+.i_AnalisisLocacion_dxbuttonGraficarIcon{
+    background-image: url(../images/MapCoordinates.png) !important;
+}
+
+
+
+.dx-field-label.widgetiElevationProfile_Row5 {
+    width: 48% !important;
+}
+
+#widgets_iElevationProfile_Widget_3 .dx-field-label{
+    width: 28%;
+}
+
+#i_AnalisisLocacion_dxsliderRotate {
+    float: left;
+    width: 55% !important;
+}
+
+.claro .dijitButtonHover .dijitButtonNode, .claro .dijitDropDownButtonHover .dijitButtonNode, 
+.claro .dijitComboButton .dijitButtonNodeHover, .claro .dijitComboButton .dijitDownArrowButtonHover, 
+.claro .dijitToggleButtonHover .dijitButtonNode {
+    background-color: #d6dce2;/*#d7e1ea;*/
+    color: #000000;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -ms-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+
+.claro .dijitButton .dijitButtonNode, .claro .dijitDropDownButton .dijitButtonNode, 
+.claro .dijitComboButton .dijitButtonNode, .claro .dijitToggleButton .dijitButtonNode {
+    border: 1px solid #080f15;
+    padding: 2px 4px 4px 4px;
+    color: #000000;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    -ms-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    background-color: #d6dce2;
+    background-image: url(form/images/buttonEnabled.png);
+    background-repeat: repeat-x;
+    background-image: -moz-linear-gradient(#ffffff 0px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0.75) 100%);
+    background-image: -webkit-linear-gradient(#ffffff 0px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0.75) 100%);
+    background-image: -o-linear-gradient(#ffffff 0px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0.75) 100%);
+    background-image: linear-gradient(#ffffff 0px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0.75) 100%);
+    _background-image: none;
+}
+
+.claro .dijitButtonActive .dijitButtonNode, .claro .dijitDropDownButtonActive .dijitButtonNode, 
+.claro .dijitComboButtonActive .dijitButtonNode, .claro .dijitToggleButtonActive .dijitButtonNode, .claro .dijitToggleButtonChecked .dijitButtonNode {
+    background-color: #c8cdd3;
+    -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-transition-duration: 0.1s;
+    -moz-transition-duration: 0.1s;
+    -ms-transition-duration: 0.1s;
+    -o-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+}
+/* --------------------- */
+
+.widget-elevation-profile {
+    position:relative;
+  width:100%;
+  height:100%;
+    -moz-min-width:265px;
+    -ms-min-width:265px;
+    -o-min-width:265px;
+    -webkit-min-width:265px;
+    min-width:265px;
+  min-height:279px;
+}
+
+.icon-info:before {
+  content: '\e91f';
+}
+
+.widget-elevation-profile .elevation-profile-result-action-button{
+  position: absolute;
+  top: -10px;
+  right: -8px;
+}
+
+.jimu-rtl .widget-elevation-profile .elevation-profile-result-action-button{
+  right: auto;
+  left: -8px;
+}
+
+.esriMeasurement .esriButton .dijitButtonNode {
+  height: 32px;
+}
+
+.LaunchpadTheme .esriMeasurement .esriButton + .esriButton .dijitButtonNode {
+  border: 1px solid #DDD  !important;
+}
+
+.LaunchpadTheme .esriMeasurement:first-child .dijitButtonNode {
+  border-radius: 2px  !important;
+}
+
+.LaunchpadTheme .esriMeasurement .esriMeasurementSeparator {
+  display: inline-block !important;
+}
+
+.LaunchpadTheme .esriMeasurement .esriToggleButton {
+  display: inline-block !important;
+}
+
+.LaunchpadTheme .esriMeasurement {
+  top: 36px !important;
+}
+
+.jimu-widget-frame>.widget-elevation-profile>.jimu-tab>.control{
+  margin:-14px -14px 0 -14.7px;
+}
+
+.widget-elevation-profileInfoDiv {
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -moz-user-select:-moz-none;
+  -ms-user-select: none;
+  user-select: none;
+  color: blue;
+  float:left;
+}
+
+.widget-elevation-profile>.jimu-tab>.jimu-viewstack{
+  position: absolute !important;
+  top:45px !important;
+  left:0 !important;
+  right:0 !important;
+  bottom:0 !important;
+  height: auto;
+  margin-bottom:-14px;
+}
+
+.widget-elevation-profileinfo-icon{
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 20px;
+  background: none repeat scroll 0% 0% #518DCA;
+  color: #FFF;
+  border-radius:99px;
+  -moz-border-radius:99px;
+  -webkit-border-radius:99px;
+  font-weight:bold;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -moz-user-select:-moz-none;
+  -ms-user-select: none;
+  user-select: none;
+  float:left;
+  width:20px;
+  height:20px;
+  padding-left:7px;
+}
+
+.widget-elevation-profile-profile-info-label {
+  float:left;
+  cursor: pointer;
+  padding-left: 4px;
+}
+
+.widget-elevation-profile .profile-tab-node{
+  position:absolute !important;
+  width:100% !important;
+  height:auto !important;
+  top:0 !important;
+  bottom:0 !important;
+  overflow: hidden;
+}
+
+.widget-elevation-profile .result-div{
+  font-size:14px;
+  padding-left:10px;
+  padding-bottom:5px;
+  margin-right: 20px;
+}
+
+.widget-elevation-profileChartNode {
+  height: 50%;
+  width: 100%;
+  min-height: 200px;
+  overflow: hidden;
+}
+
+.widget-elevation-profile .PanelMax {
+  height: 320px;
+}
+
+.widget-elevation-profileLabel {
+  color: #000;
+  font-weight: bolder;
+  font-size: 0.8em;
+  line-height: 1.0em;
+}
+
+.widget-elevation-profileGainLossLabel {
+  width: 30%;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  text-align: left;
+  white-space: nowrap;
+  display: inline-block;
+  position: absolute;
+}
+
+.esriRTL .widget-elevation-profileGainLossLabel {
+  right: 10px;
+  text-align: right;
+}
+
+.widget-elevation-profileSourceLabel {
+  width: 30%;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  text-align: right;
+  overflow: hidden;
+  white-space: nowrap;
+  word-break: keep-all;
+  word-wrap: normal;
+  text-overflow: ellipsis;
+}
+
+.esriRTL .widget-elevation-profileSourceLabel {
+  left: 10px;
+  text-align: left;
+}
+
+.widget-elevation-profilePopupRequirementLabel {
+  color: #000;
+  padding-left: 6px;
+  font-size: smaller;
+}
+
+#tooltip
+{
+  text-align: center;
+  color: #fff;
+  background: #111;
+  position: absolute;
+  z-index: 100;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid white;
+}
+
+#tooltip:after /* triangle decoration */
+{
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #111;
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  margin-left: -10px;
+}
+
+#tooltip.top:after
+{
+  border-top-color: transparent;
+  border-bottom: 10px solid #111;
+  top: -20px;
+  bottom: auto;
+}
+
+#tooltip.left:after
+{
+  left: 10px;
+  margin: 0;
+}
+
+#tooltip.right:after
+{
+  right: 10px;
+  left: auto;
+  margin: 0;
+}

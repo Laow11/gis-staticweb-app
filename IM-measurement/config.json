@@ -1,0 +1,18 @@
+{
+  "showArea": true,
+  "showDistance": true,
+  "showLocation": true,
+  "measurement": {
+    "defaultAreaUnit": "esriSquareMeters",
+    "defaultLengthUnit": "esriMeters"
+  },
+  "defaultAreaUnit": "esriSquareMiles",
+  "defaultLengthUnit": "esriMiles",
+  "geometryServiceURL": "https://tecnwgisqa.tecpetrol.techint.net/arcgis/rest/services/Utilities/Geometry/GeometryServer",
+  "transformationsServiceURL": "https://tecnwgisqa.tecpetrol.techint.net/Calculadora_AppServer/CoordinatesConverterService.svc",
+  "UG": "NQN",
+  "mapSys": "7",
+  "demServiceURL": "https://tecnwgisqa.tecpetrol.techint.net/arcgis/rest/services/TECP/DEM_Fortin_de_Piedra/MapServer",
+  "altitudeField": "Pixel Value",
+  "invertAxis": true
+}

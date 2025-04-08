@@ -1,0 +1,80 @@
+<div id>
+    <div id="gridsContainer" class="gridsContainer" style="margin-bottom: 5px; border-bottom: 4px solid #ddd; height: 266px; width: 800px">
+        <div id="containerAV" class="container"
+            style="float: left; padding: 15px; padding-bottom: 0px; padding-top:0px; padding-left: 0px; padding-right: 13px; border-right: 4px solid #ddd;">
+            <br>
+            <div>                
+                <!-- <div class="filters">Desde: <input type="date" id="start"
+                min="1900-01-01" max="2100-12-31"> Hasta:  <input type="date" id="start"
+                min="1900-01-01" max="2100-12-31">
+            </div> -->
+                <div id="containerBtnsID" class="container-btns"
+                    style="border: 1px solid #ddd; height: 23px; padding: 4px; padding-bottom: 25px; padding-left: 6px; padding-right: 0px; width: 385px;">
+                    <div id="cFilterAV" data-todos="filtrados" style="display: inline-block; cursor: pointer;"
+                        title="Mostrar todos"><i class="fa fa-eye-slash"></i> </div>
+                    <div id="zoomAv"
+                        style="display: inline-block; padding-left: 16px; padding-right:5px; margin-left: 7px; border-left: 1px solid #ddd; cursor: pointer;"
+                        title="Zoom al elemento">
+                        <i title="Zoom a lo seleccionado" class="fa fa-location-arrow" aria-hidden="true"></i></div>
+                    <div id="attributesTableAV" name="Close"
+                        style="display: inline-block; padding-left: 15px; padding-right: 5px; margin-left: 7px; border-left: 1px solid #ddd; cursor: pointer;"
+                        title="Ver en tabla de atributos">
+                        <i title="Ver en tabla de atributos" class="fa fa-table" aria-hidden="true"></i></div>
+                    <div id = "idTitleAverias"
+                        style="display: inline-block; padding-left: 65px;padding-right: 75px; margin-left: 7px; border-left: 1px solid #ddd; border-right: 1px solid #ddd"
+                        title="Averías">
+                        <span class="title">Averías</span>
+                    </div>     
+                    <div name="Open" id="cOcultarOTs" style="display: inline-block; padding-right: 20px; padding-left: 20px; margin-left: 7px; cursor: pointer;"
+                    title="Ocultar Órdenes de Trabajo"><i id="cOcultarOTsArrow" class="fas fa-angle-double-left"></i></div>
+
+                </div>
+                
+            </div>
+            <div id="gridAverias">
+            </div>
+            <div id="tooltipAverias" style = "display: none;"></div>
+        </div>
+        <div id="containerOT" class="container" style="float: right;padding-bottom: 0px; padding-right: 0px; padding-left: 0px; padding-top: 0px">
+            <br>
+            <!-- <div class="filters">Desde: <input type="date" id="start"
+            min="1900-01-01" max="2100-12-31"> Hasta:  <input type="date" id="start"
+            min="1900-01-01" max="2100-12-31">
+        </div> -->
+            <div class="container-btns" id = "containerbtnsOT"
+                style="border: 1px solid #ddd; height: 23px; padding: 4px; padding-left: 8px; width: 385px; padding-bottom: 25px">
+                <div id="cFilterOT" data-todos="filtrados" style="display: inline-block; cursor: pointer; padding-left: 1%; padding-right: 1%;"
+                    title="Mostrar todos"><i class="fa fa-eye-slash"></i> </div>                
+                <div id = "OTTitleID"
+                    style="display: inline-block; border-left: 1px solid #ddd; cursor: pointer; padding-left: 25%"
+                    title="Órdenes de Trabajo">
+                    <span class="title">Órdenes de Trabajo</span></div>
+				<div name="Small" id="cAgrandarGrillaOT" style="float: right; padding-top: 4px; padding-left: 10.2%; padding-right: 8%; border-left: 1px solid #ddd; display: inline-block; cursor: pointer;"
+                    title="Agrandar grilla OTs"><i id="cAgrandarGrillaOTsArrow" class="fas fa-angle-double-right"></i></div>
+    
+                <!-- <div id="zoomOt"
+                    style="display: inline-block; padding-left: 5px; margin-left: 5px; border-left: 1px solid #ddd; cursor: pointer;"
+                    title="Zoom al elemento">
+                    <i title="Zoom a lo seleccionado" class="fa fa-location-arrow" aria-hidden="true"></i></div> -->
+            </div>
+            <div id="gridOT">
+            </div>
+        </div>
+    </div>
+    <div class="footerContainer">
+        <!-- <div class="loaderContainer" style="float: left;margin-top: 20px;">
+            <span id="statusInfo"></span>
+        </div> -->
+        <div class="buttonContainer" style="float: left; width: 100%">
+            <!-- <button data-todos="filtrados" style="margin-right: 20px;" id="verTodos" disabled="disabled">Ver
+                Todo</button> -->
+            <button class = "jimu-btn" id="asignarButton" disabled="disabled">Asignar</button>
+            <button class= "jimu-btn" id="desasignarButton" disabled="disabled">Desasignar</button>
+            <button class= "jimu-btn" id="aprobarButton" disabled="disabled">Aprobar</button>
+            <button class= "jimu-btn" id="refrescarButton" style="float: right">Refrescar</button>
+            <button class= "jimu-btn" id="eliminarAveriaButton" disabled="disabled">Eliminar</button>
+            <button class= "jimu-btn" id="desestimarOTButton" style="float: right; margin-right: 3px" disabled="disabled">Desestimar OT</button>
+            <div id="controlGrid" style="display:none;"></div>
+        </div>
+    </div>
+</div>

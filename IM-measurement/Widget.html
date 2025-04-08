@@ -1,0 +1,86 @@
+<div>
+    <div data-dojo-attach-point="measurementDiv"></div>
+    <div id="decimalCoordinates" class="esriMeasurement">
+        <div dojotype="dijit.layout.ContentPane" dojoattachpoint="resultTableDecimalCoordinates" align="leading" class="dijitContentPane resultTable esriMeasurementTableContainer"
+            style="display: block;" id="decimalCoordinatesTable">
+            <table class="esriMeasurementResultTable">
+                <tbody>
+                    <tr class="esriMeasurementTableRow">
+                        <td id="pinCell" dojoattachpoint="pinCell">
+                        </td>
+                        <td class="esriMeasurementTableCell">
+                            <span id="markerLatitudeDecimal" dojoattachpoint="markerLatitudeDecimal" dir="ltr">---</span>
+                        </td>
+                        <td class="esriMeasurementTableCell">
+                            <span id="markerLongitudeDecimal" dojoattachpoint="markerLongitudeDecimal" dir="ltr">---</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="aditionalCoordinates" class="esriMeasurement" style="margin-top: 16px;">
+        <div class="systemselector">
+            <div class="measurement-out-systemLabel">
+                Sistema de salida
+            </div>
+            <select name="measurement-out-coordinateSystem" id="measurement-out-coordinateSystem" class="measurement-out-coordinateSystem">
+            </select>
+        </div>
+        <div dojotype="dijit.layout.ContentPane" dojoattachpoint="resultTableAditionalCoordinates" align="leading" class="dijitContentPane resultTable esriMeasurementTableContainer"
+            style="display: block !important; width: 100% !important;" id="aditionalCoordinatesTable">
+            <table class="esriMeasurementResultTable">
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: center;">X</td>
+                        <td style="text-align: center;">Y</td>
+                        <td style="text-align: center;">Z</td>
+                    </tr>
+                    <tr class="esriMeasurementTableRow" id="im-measurement-transformation-result">
+                        <td id="pinCell" dojoattachpoint="pinCell">
+                            <i style="font-size: 18px;" class="fas fa-map-pin"></i>
+                        </td>
+                        <td style="text-align: center;">
+                            <span id="markerLatitudePlanar" dojoattachpoint="markerLatitudePlanar" dir="ltr">---</span>
+                        </td>
+                        <td style="text-align: center;">
+                            <span id="markerLongitudePlanar" dojoattachpoint="markerLongitudePlanar" dir="ltr">---</span>
+                        </td>
+                        <td style="text-align: center;">
+                            <span id="markerAltitudePlanar" dojoattachpoint="markerAltitudePlanar" dir="ltr">---</span>
+                        </td>
+                    </tr>
+                    <tr class="esriMeasurementTableRow" id="im-measurement-transformation-loading">
+                        <td id="pinCell" dojoattachpoint="pinCell">
+                            <i style="font-size: 18px;" class="fas fa-map-pin"></i>
+                        </td>
+                        <td style="text-align: center;">
+                            <span dir="ltr">
+                                <i class="fas fa-circle-notch fa-spin fa-fw"></i>
+                            </span>
+                        </td>
+                        <td style="text-align: center;">
+                            <span dir="ltr">
+                                <i class="fas fa-circle-notch fa-spin fa-fw"></i>
+                            </span>
+                        </td>
+                        <td style="text-align: center;">
+                            <span dir="ltr">
+                                <i class="fas fa-circle-notch fa-spin fa-fw"></i>
+                            </span> 
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="widgetFooter im-measurement-autocolor">
+        <span class="mouseCellLabel">
+            Coordenadas mapa
+            <i class="fas fa-map-marked-alt"></i>
+        </span>
+        <span id="mouseLongitudePlanar" class="mouseLongitudePlanar" dir="ltr">--</span>
+        <span id="mouseLatitudePlanar" class="mouseLatitudePlanar" dir="ltr">--</span>
+    </div>
+</div>

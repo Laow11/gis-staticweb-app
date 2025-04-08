@@ -1,0 +1,714 @@
+﻿{
+    "URLs": {
+        "averiasFeature": "https://tecnwgis01.tecpetrol.techint.net/arcgis/rest/services/TECP/TECP_MAPA_AVERIAS_WEB/FeatureServer/1",
+        "ordenesFeature": "https://tecnwgis01.tecpetrol.techint.net/arcgis/rest/services/TECP/TECP_MAPA_WEB_AVERIAS_OT/MapServer/1",
+        "ordenesFeatureEdit": "https://tecnwgis01.tecpetrol.techint.net/arcgis/rest/services/TECP/TECP_MAPA_AVERIAS_WEB/FeatureServer/6",
+        "geometryServerUrl": "https://tecnwgis01.tecpetrol.techint.net/arcgis/rest/services/Utilities/Geometry/GeometryServer",
+        "domainsValuesURL": "https://tecnwgis01.tecpetrol.techint.net/arcgis/rest/services/TECP/TECP_MAPA_AVERIAS_WEB/FeatureServer/queryDomains",
+        "averiasFeatureDelete": "https://tecnwgis01.tecpetrol.techint.net/arcgis/rest/services/TECP/TECP_MAPA_AVERIAS_WEB/FeatureServer/1/deleteFeatures"
+    },
+    "parameters": {
+        "aprobadoRevisadoDomain": "DM_SAP_AVERIAS_SINO",
+        "AttributeTableWidgetName": "AttributeTable",
+        "NotificatedOTStateAttribute": "Notificada",
+        "ClosedOTStateAttribute": "Cerrada"
+    },
+    "dataAveria": {
+        "OBJECTID": "OBJECTID",
+        "NRO_OT": "NRO_OT",
+        "FECHA_AVERIA": "FECHA_AVERIA",
+        "FECHA_INICIO": "FECHA_INICIO",
+        "FECHA_FIN": "FECHA_FIN",
+        "ID_DUCTO": "ID_DUCTO",
+        "NOTIF_FINAL": "NOTIF_FINAL",
+        "COORD_X": "COORD_X",
+        "COORD_Y": "COORD_Y",
+        "ESTADO": "ESTADO",
+        "MOTIVO": "MOTIVO",
+        "TAREA": "TAREA",
+        "TIPO": "TIPO",
+        "DIAMETRO": "DIAMETRO",
+        "TENDIDO": "TENDIDO",
+        "UBICACION": "UBICACION",
+        "OBSERVACIONES": "OBSERVACIONES",
+        "GLOBALID": "GLOBALID",
+        "SAP_CAPA": "SAP_CAPA",
+        "SAP_CAPA_ID": "SAP_CAPA_ID",
+        "SAP_HORAREALES": "SAP_HORAREALES",
+        "OPERACIONES": "OPERACIONES",
+        "SAP_PUESTOTRABAJO": "SAP_PUESTOTRABAJO",
+        "SANEAMIENTO": "SANEAMIENTO",
+        "REVISADO": "REVISADO",
+        "APROBADO": "APROBADO",
+        "EXPORTADO": "EXPORTADO",
+        "SAP_NAVISO": "SAP_NAVISO",
+        "OT_NAME": "OT_NAME",
+        "OT_LASTMODIFIEDDATE": "OT_LASTMODIFIEDDATE",
+        "OT_CLASESDEORDEN": "OT_CLASESDEORDEN",
+        "OT_FECHA_INICIO": "OT_FECHA_INICIO",
+        "OT_FECHA_FIN": "OT_FECHA_FIN",
+        "OT_TIPODETAREA": "OT_TIPODETAREA",
+        "OT_ORDEN_STATUS": "OT_ORDEN_STATUS",
+        "OT_PROBLEM_SUMMARY": "OT_PROBLEM_SUMMARY",
+        "OT_SITE": "OT_SITE",
+        "OT_SCHEDULED": "OT_SCHEDULED",
+        "OT_PREVIOUS_SCHEDULED": "OT_PREVIOUS_SCHEDULED",
+        "OT_ACKNOWLEDGED_BY_TECHNICIAN": "OT_ACKNOWLEDGED_BY_TECHNICIAN",
+        "OT_ACTUAL_ONSITE_RESPONSE": "OT_ACTUAL_ONSITE_RESPONSE",
+        "OT_POZO": "OT_POZO",
+        "OT_SMAX_PS_SAP_PM_WO_ID_C": "OT_SMAX_PS_SAP_PM_WO_ID_C",
+        "OT_CREATEDDATE": "OT_CREATEDDATE",
+        "OT_ID_AVISO_SAP_C": "OT_ID_AVISO_SAP_C",
+        "CUSUARIO": "CUSUARIO",
+        "CFECHA": "CFECHA",
+        "MUSUARIO": "MUSUARIO",
+        "MFECHA": "MFECHA",
+        "BORRADA": "BORRADA"
+    },
+    "dataOT": {
+        "OBJECTID": "OBJECTID",
+        "NAME": "NAME",
+        "LASTMODIFIEDDATE": "LASTMODIFIEDDATE",
+        "CLASESDEORDEN": "CLASESDEORDEN",
+        "FECHA_INICIO": "FECHA_INICIO",
+        "FECHA_FIN": "FECHA_FIN",
+        "TIPODETAREA": "TIPODETAREA",
+        "ORDEN_STATUS": "ORDEN_STATUS",
+        "PROBLEM_SUMMARY": "PROBLEM_SUMMARY",
+        "POZO": "POZO",
+        "CUSER": "CUSER",
+        "CDATE": "CDATE",
+        "MUSER": "MUSER",
+        "MDATE": "MDATE",
+        "SITE": "SITE",
+        "SCHEDULED": "SCHEDULED",
+        "PREVIOUS_SCHEDULED": "PREVIOUS_SCHEDULED",
+        "ACKNOWLEDGED_BY_TECHNICIAN": "ACKNOWLEDGED_BY_TECHNICIAN",
+        "ACTUAL_ONSITE_RESPONSE": "ACTUAL_ONSITE_RESPONSE",
+        "CREATEDDATE": "CREATEDDATE",
+        "ID_AVISO_SAP_C": "ID_AVISO_SAP_C",
+        "SMAX_PS_SAP_PM_WO_ID_C": "SMAX_PS_SAP_PM_WO_ID_C",
+        "DESESTIMAR": "DESESTIMAR"
+    },
+    "averiasGrid": {
+        "divId": "_dxDataGridNodeAverias",
+        "allowColumnResizing": false,
+        "allowColumnReordering": true,
+        "cacheEnabled": true,                
+        "columnAutoWidth": true,
+        "editing":{
+            "texts": {
+                "confirmDeleteMessage": ""
+            }
+        },
+        "columns": [
+            {
+                "dataField": "OBJECTID",
+                "caption": "ID",
+                "dataType": "string",
+                "visible": true,
+                "allowFiltering": true,
+                "allowHeaderFiltering": false
+            },
+            {
+                "dataField": "SAP_NAVISAO",
+                "caption": "ID",
+                "dataType": "string",
+                "width": "50px",
+                "visible": false,
+                "allowFiltering": true,
+                "allowHeaderFiltering": true
+            },
+            {
+                "dataField": "NRO_OT",
+                "caption": "OT",
+                "dataType": "string",
+                "width": "90px",
+                "visible": true,
+                "alignment": "center",
+                "allowFiltering": true,
+                "allowHeaderFiltering": true
+            },
+            {
+                "dataField": "ID_DUCTO",
+                "caption": "Ducto",
+                "dataType": "string",
+                "width": "70px",
+                "visible": true,
+                "allowFiltering": true,
+                "allowHeaderFiltering": true
+            },
+            {
+                "dataField": "FECHA_AVERIA",
+                "caption": "Fecha avería",
+                "dataType": "date",
+                "alignment": "center",
+                "width": "105px",
+                "visible": false,
+                "allowFiltering": true,
+                "allowHeaderFiltering": true
+            },
+            {
+                "dataField": "REVISADO",
+                "width": "80px",
+                "caption": "Revisado",
+                "dataType": "string",
+                "visible": true
+            },
+            {
+                "dataField": "APROBADO",
+                "width": "80px",
+                "caption": "Aprobado",
+                "dataType": "string",
+                "visible": true
+            },
+            {
+                "dataField": "FECHA_INICIO",
+                "caption": "Fecha inicio",
+                "dataType": "date",
+                "width": "105px",
+                "visible": true,
+                "allowFiltering": true,
+                "allowHeaderFiltering": true
+            },
+            {
+                "dataField": "FECHA_FIN",
+                "caption": "Fecha fin",
+                "dataType": "date",
+                "width": "105px",
+                "visible": true,
+                "allowFiltering": true,
+                "allowHeaderFiltering": true
+            },            
+            {
+                "dataField": "NOTIF_FINAL",
+                "caption": "Notificacion Final",
+                "dataType": "string",
+                "allowFiltering": true,
+                "allowHeaderFiltering": true,
+                "visible": false
+            },
+            {
+                "dataField": "COORD_X",
+                "caption": "Coordenada X",
+                "dataType": "number",
+                "visible": false
+            },
+            {
+                "dataField": "COORD_Y",
+                "caption": "Coordenada Y",
+                "dataType": "number",
+                "visible": false
+            },
+            {
+                "dataField": "ESTADO",
+                "caption": "Estado",
+                "dataType": "string",
+                "visible": false
+            },
+            {
+                "dataField": "MOTIVO",
+                "caption": "Motivo",
+                "dataType": "string",
+                "visible": false
+            },
+            {
+                "dataField": "TAREA",
+                "caption": "Tarea",
+                "dataType": "string",
+                "visible": false
+            },
+            {
+                "dataField": "DIAMETRO",
+                "caption": "Diametro",
+                "dataType": "string",
+                "visible": false
+            },
+            {
+                "dataField": "TENDIDO",
+                "caption": "Tendido",
+                "dataType": "string",
+                "visible": false
+            },
+            {
+                "dataField": "UBICACION",
+                "caption": "Ubicacion",
+                "dataType": "string",
+                "visible": false
+            },
+            {
+                "dataField": "OBSERVACIONES",
+                "caption": "Observaciones",
+                "dataType": "string",
+                "visible": false
+            },
+            {
+                "dataField": "GLOBALID",
+                "caption": "ID Global",
+                "dataType": "string",
+                "visible": false
+            },
+            {
+                "dataField": "SAP_CAPA",
+                "caption": "Capa SAP",
+                "dataType": "string",
+                "visible": false
+            },
+            {
+                "dataField": "SAP_CAPA_ID",
+                "caption": "ID Capa SAP",
+                "dataType": "string",
+                "visible": false
+            },
+            {
+                "dataField": "SAP_HORAREALES",
+                "caption": "SAP_HORAREALES",
+                "dataType": "number",
+                "visible": false
+            },
+            {
+                "dataField": "OPERACIONES",
+                "caption": "Operaciones",
+                "dataType": "string",
+                "visible": false
+            },
+            {
+                "dataField": "SAP_PUESTOTRABAJO",
+                "caption": "SAP_PUESTOTRABAJO",
+                "dataType": "string",
+                "visible": false
+            },
+            {
+                "dataField": "SANEAMIENTO",
+                "caption": "Sanamiento",
+                "dataType": "string",
+                "visible": false
+            },            
+            {
+                "dataField": "EXPORTADO",
+                "caption": "EXPORTADO",
+                "dataType": "string",
+                "visible": false
+            },
+            {
+                "dataField": "created_user",
+                "caption": "created_user",
+                "dataType": "string",
+                "visible": false
+            },
+            {
+                "dataField": "created_date",
+                "caption": "created_date",
+                "dataType": "date",
+                "visible": false
+            },
+            {
+                "dataField": "last_edited_user",
+                "caption": "last_edited_user",
+                "dataType": "string",
+                "visible": false
+            },
+            {
+                "dataField": "last_edited_date",
+                "caption": "last_edited_date",
+                "dataType": "date",
+                "visible": false
+            },
+            {
+                "dataField": "OT_NAME",
+                "caption": "OT_NAME",
+                "dataType": "string",
+                "visible": false
+            },
+            {
+                "dataField": "OT_LASTMODIFIEDDATE",
+                "caption": "OT_LASTMODIFIEDDATE",
+                "dataType": "date",
+                "visible": false
+            },
+            {
+                "dataField": "OT_CLASESDEORDEN",
+                "caption": "OT_CLASESDEORDEN",
+                "dataType": "string",
+                "visible": false
+            },
+            {
+                "dataField": "OT_FECHA_INICIO",
+                "caption": "OT_FECHA_INICIO",
+                "dataType": "date",
+                "width": "105px",
+                "visible": false
+            },
+            {
+                "dataField": "OT_FECHA_FIN",
+                "caption": "OT_FECHA_FIN",
+                "width": "105px",
+                "dataType": "date",
+                "visible": false
+            },
+            {
+                "dataField": "OT_TIPODETAREA",
+                "caption": "OT_TIPODETAREA",
+                "dataType": "string",
+                "visible": false
+            },
+            {
+                "dataField": "OT_ORDEN_STATUS",
+                "caption": "OT_ORDEN_STATUS",
+                "dataType": "string",
+                "visible": false
+            },
+            {
+                "dataField": "OT_PROBLEM_SUMMARY",
+                "caption": "OT_PROBLEM_SUMMARY",
+                "dataType": "string",
+                "visible": false
+            },
+            {
+                "dataField": "OT_SITE",
+                "caption": "OT_SITE",
+                "dataType": "string",
+                "visible": false
+            },
+            {
+                "dataField": "OT_SCHEDULED",
+                "caption": "OT_SCHEDULED",
+                "dataType": "date",
+                "visible": false
+            },
+            {
+                "dataField": "OT_PREVIOUS_SCHEDULED",
+                "caption": "OT_PREVIOUS_SCHEDULED",
+                "dataType": "date",
+                "visible": false
+            },
+            {
+                "dataField": "OT_ACKNOWLEDGED_BY_TECHNICIAN",
+                "caption": "OT_ACKNOWLEDGED_BY_TECHNICIAN",
+                "dataType": "date",
+                "visible": false
+            },
+            {
+                "dataField": "OT_ACTUAL_ONSITE_RESPONSE",
+                "caption": "OT_ACTUAL_ONSITE_RESPONSE",
+                "dataType": "date",
+                "visible": false
+            },
+            {
+                "dataField": "OT_POZO",
+                "caption": "OT_POZO",
+                "dataType": "string",
+                "visible": false
+            }
+        ],
+        "columnResizingMode": "nextColumn",
+        "export": {
+            "enabled": false,
+            "allowExportSelectedData": true
+        },
+        "filterRow": {
+            "visible": true
+        },
+        "filterSyncEnabled": false,
+        "headerFilter": {
+            "visible": true,
+            "texts": {
+                "cancel": "Cancelar",
+                "emptyValue": "Vacios",
+                "ok": "Aceptar"
+            }
+        },
+        "height": "216px",
+        "hoverStateEnabled": false,
+        "loadPanel": {
+            "enabled": true,
+            "text": "Cargando..."
+        },
+        "noDataText": "No hay datos.",
+        "paging": {
+            "enabled": false,
+            "pageIndex": 0,
+            "pageSize": 10000
+        },
+        "pager": {
+            "allowedPageSizes": [
+                20,
+                100,
+                200
+            ],
+            "showPageSizeSelector": false,
+            "showInfo": false,
+            "showNavigationButtons": false
+        },
+        "rowAlternationEnabled": true,
+        "selection": {
+            "mode": "multiple"
+        },
+        "showBorders": true,
+        "showColumnHeaders": true,
+        "showColumnLines": true,
+        "showRowLines": true,
+        "scrolling": {
+            "mode": "Standard",
+            "showScrollbar": "always"
+        },
+        "sorting": {
+            "mode": "single"
+        },
+        "wordWrapEnabled": true,
+        "width": "385px",
+        "enableMasterDetailViews": false,
+        "enableMultipleMasterDetailViews": false
+    },
+    "OTGrid": {
+        "divId": "_dxDataGridNodeOT",
+        "allowColumnResizing": false,
+        "allowColumnReordering": true,
+        "cacheEnabled": true,
+        "columnChooser": {
+            "enabled": false
+        },
+        "columnAutoWidth": true,
+        "columns": [
+            {
+                "dataField": "OBJECTID",
+                "caption": "ID",
+                "dataType": "number",
+                "alignment": "center",
+                "visible": false
+            },
+            {
+                "dataField": "NAME",
+                "caption": "Nombre",
+                "dataType": "string",
+                "width": "85px",
+                "visible": true,
+                "allowFiltering": true,
+                "allowHeaderFiltering": true
+            },   
+            {
+                "dataField": "FECHA_INICIO",
+                "caption": "Fecha inicio",
+                "dataType": "date",
+                "width": "98px",
+                "visible": true,
+                "allowFiltering": true,
+                "allowHeaderFiltering": true
+            },
+            {
+                "dataField": "FECHA_FIN",
+                "caption": "Fecha Fin",
+                "dataType": "date",
+                "width": "98px",
+                "visible": true,
+                "allowFiltering": true,
+                "allowHeaderFiltering": true
+            },
+            {
+                "dataField": "TIPODETAREA",
+                "caption": "Tipo de tarea",
+                "alignment": "center",
+                "dataType": "number",
+                "width": "60px",
+                "visible": false,
+                "allowFiltering": true,
+                "allowHeaderFiltering": true
+            },
+            {
+                "dataField": "ORDEN_STATUS",
+                "caption": "Estado de la orden",
+                "dataType": "string",
+                "width": "139px",
+                "visible": true,
+                "allowFiltering": true,
+                "allowHeaderFiltering": true
+            },
+            {
+                "dataField": "POZO",
+                "caption": "Instalaciones",
+                "dataType": "string",
+                "visible": true,
+                "width": "120px",
+                "allowFiltering": true,
+                "allowHeaderFiltering": true
+            },
+            {
+                "dataField": "PROBLEM_SUMMARY",
+                "caption": "Resumen problema",
+                "width": "90px",
+                "dataType": "number",
+                "visible": true,
+                "allowFiltering": true,
+                "allowHeaderFiltering": true
+            },
+            {
+                "dataField": "CUSER",
+                "caption": "CUSER",
+                "dataType": "number",
+                "visible": false
+            },
+            {
+                "dataField": "CDATE",
+                "caption": "CDATE",
+                "dataType": "date",
+                "visible": false
+            },
+            {
+                "dataField": "MUSER",
+                "caption": "MUSER",
+                "dataType": "string",
+                "visible": false
+            },
+            {
+                "dataField": "MDATE",
+                "caption": "MDATE",
+                "dataType": "date",
+                "visible": false
+            },
+            {
+                "dataField": "SITE",
+                "caption": "Ubicación",
+                "width": "80px",
+                "dataType": "string",
+                "visible": false
+            },
+            {
+                "dataField": "SCHEDULED",
+                "caption": "Programación",
+                "dataType": "date",
+                "width": "98px",
+                "visible": true,
+                "allowFiltering": true,
+                "allowHeaderFiltering": true
+            },
+            {
+                "dataField": "PREVIOUS_SCHEDULED",
+                "caption": "Programación anterior",
+                "dataType": "date",
+                "width": "98px",
+                "visible": true,
+                "allowFiltering": true,
+                "allowHeaderFiltering": true
+            },
+            {
+                "dataField": "ACKNOWLEDGED_BY_TECHNICIAN",
+                "caption": "Reconocido por técnico",
+                "dataType": "date",
+                "width": "98px",
+                "visible": true,
+                "allowFiltering": true,
+                "allowHeaderFiltering": true
+            },
+            {
+                "dataField": "ACTUAL_ONSITE_RESPONSE",
+                "caption": "Inicio real",
+                "dataType": "date",
+                "width": "98px",
+                "visible": true,
+                "allowFiltering": true,
+                "allowHeaderFiltering": true
+            },
+            {
+                "dataField": "CREATEDDATE",
+                "caption": "Creación Aviso",
+                "dataType": "date",
+                "width": "98px",
+                "visible": true,
+                "allowFiltering": true,
+                "allowHeaderFiltering": true
+            },
+            {
+                "dataField": "ID_AVISO_SAP_C",
+                "caption": "Aviso SAP",
+                "dataType": "string",
+                "width": "65px",
+                "visible": true,
+                "allowFiltering": true,
+                "allowHeaderFiltering": true
+            },
+            {
+                "dataField": "SMAX_PS_SAP_PM_WO_ID_C",
+                "caption": "OT SAP",
+                "dataType": "string",
+                "width": "65px",
+                "visible": true,
+                "allowFiltering": true,
+                "allowHeaderFiltering": true
+            },
+            {
+                "dataField": "LASTMODIFIEDDATE",
+                "caption": "Última modif.SMX",
+                "dataType": "date",
+                "width": "98px",
+                "visible": true,
+                "allowFiltering": true,
+                "allowHeaderFiltering": true
+            },
+            {
+                "dataField": "CLASESDEORDEN",
+                "caption": "Clases orden",
+                "dataType": "string",
+                "width": "65px",
+                "visible": true,
+                "allowFiltering": true,
+                "allowHeaderFiltering": true
+            }
+        ],
+        "columnResizingMode": "nextColumn",
+        "export": {
+            "enabled": false,
+            "allowExportSelectedData": true
+        },
+        "filterRow": {
+            "visible": true
+        },
+        "headerFilter": {
+            "texts": {
+                "cancel": "Cancelar",
+                "emptyValue": "Vacios",
+                "ok": "Aceptar"
+            },
+            "visible": true
+        },
+        "hoverStateEnabled": true,
+        "loadPanel": {
+            "enabled": true,
+            "text": "Cargando..."
+        },
+        "paging": {
+            "enabled": false,
+            "pageIndex": 0,
+            "pageSize": 10000
+        },
+        "pager": {
+            "allowedPageSizes": [
+                20,
+                100,
+                200
+            ],
+            "showPageSizeSelector": false,
+            "showInfo": false,
+            "showNavigationButtons": false
+        },
+        "rowAlternationEnabled": true,
+        "selection": {
+            "mode": "single"
+        },
+        "showBorders": true,
+        "showColumnHeaders": true,
+        "showColumnLines": true,
+        "showRowLines": true,
+        "scrolling": {
+            "mode": "Standard",
+            "showScrollbar": "always"
+        },
+        "sorting": {
+            "mode": "single"
+        },
+        "wordWrapEnabled": true,
+        "width": "385px",
+        "height": "216px",
+        "enableMasterDetailViews": false,
+        "enableMultipleMasterDetailViews": false
+    }
+}

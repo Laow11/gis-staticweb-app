@@ -1,0 +1,499 @@
+﻿{
+    "scalebarUnits": "metric",
+    "vertexLimit": 2000,
+    "demResolutionDefault:": "1m",
+    "chartRenderingOptions": {
+        "chartTitleFontSize": 1,
+        "axisTitleFontSize": 9,
+        "axisLabelFontSize": 7,
+        "indicatorFontColor": "#eee",
+        "indicatorFillColor": "#777",
+        "titleFontColor": "#000",
+        "axisFontColor": "#000",
+        "axisMajorTickColor": "#777",
+        "skyTopColor": "#B0E0E6",
+        "skyBottomColor": "#4682B4",
+        "waterLineColor": "#eee",
+        "waterTopColor": "#ADD8E6",
+        "waterBottomColor": "#0000FF",
+        "elevationLineColor": "#ffaa00",
+        "elevationTopColor": "#8B4513",
+        "elevationBottomColor": "#CD853F",
+        "constrain": false
+    },
+    "elevationProfileWidget": {
+        "divId": "iElevationProfile_chartNode",
+        "scalebarUnits": "esriKilometers",
+        "chartRenderingOptions": {
+            "chartTitleFontSize": 10,
+            "axisTitleFontSize": 10,
+            "axisLabelFontSize": 10,
+            "busyIndicatorBackgroundColor": "#666",
+            "busyIndicatorImageUrl": "images/iElevationProfile_standby.gif",
+            "indicatorFontColor": "#eeeeee",
+            "indicatorFillColor": "#777777",
+            "titleFontColor": "#777777",
+            "axisFontColor": "#777777",
+            "axisMajorTickColor": "#777777",
+            "skyTopColor": "#b0e0e6",
+            "skyBottomColor": "#4682b4",
+            "waterLineColor": "#eeeeee",
+            "waterTopColor": "#add8e6",
+            "waterBottomColor": "#0000ff",
+            "elevationLineColor": "#ffaa00",
+            "elevationTopColor": "#8b4513",
+            "elevationBottomColor": "#cd853f",
+            "elevationMarkerStrokeColor": "#FF0000",
+            "title": "",
+            "constrain": false
+        },
+        "symbols": {
+            "simplelinesymbol": {
+                "color": [
+                    255,
+                    170,
+                    0,
+                    255
+                ],
+                "width": 1.5,
+                "type": "esriSLS",
+                "style": "esriSLSSolid"
+            },
+            "lineEndSymbol": {
+                "color": [
+                    255,
+                    170,
+                    0,
+                    204
+                ],
+                "size": 3,
+                "angle": 0,
+                "xoffset": 0,
+                "yoffset": 0,
+                "type": "esriSMS",
+                "style": "esriSMSSquare",
+                "outline": {
+                    "color": [
+                        255,
+                        170,
+                        0,
+                        207
+                    ],
+                    "width": 1.125,
+                    "type": "esriSLS",
+                    "style": "esriSLSSolid"
+                }
+            },
+            "mapIndicatorSymbol": {
+                "color": [
+                    250,
+                    0,
+                    0,
+                    0
+                ],
+                "size": 22.5,
+                "angle": 0,
+                "xoffset": 0,
+                "yoffset": 11.25,
+                "type": "esriSMS",
+                "style": "esriSMSPath",
+                "outline": {
+                    "color": [
+                        250,
+                        0,
+                        0,
+                        0
+                    ],
+                    "width": 0.9375,
+                    "type": "esriSLS",
+                    "style": "esriSLSSolid"
+                },
+                "path": "m -6 -6, l 12 12, m 0 -12, l -12 12",
+                "pathOld": "M16,3.5c-4.142,0-7.5,3.358-7.5,7.5c0,4.143,7.5,18.121,7.5,18.121S23.5,15.143,23.5,11C23.5,6.858,20.143,3.5,16,3.5z M16,14.584c-1.979,0-3.584-1.604-3.584-3.584S14.021,7.416,16,7.416S19.584,9.021,19.584,11S17.979,14.584,16,14.584z"
+            }
+        }
+    },
+    "symbols": {
+        "simplelinesymbol": {
+            "color": [
+                255,
+                0,
+                0,
+                255
+            ],
+            "width": 1.5,
+            "type": "esriSLS",
+            "style": "esriSLSSolid"
+        },
+        "lineEndSymbol": {
+            "color": [
+                168,
+                0,
+                0,
+                204
+            ],
+            "size": 3,
+            "angle": 0,
+            "xoffset": 0,
+            "yoffset": 0,
+            "type": "esriSMS",
+            "style": "esriSMSSquare",
+            "outline": {
+                "color": [
+                    230,
+                    0,
+                    0,
+                    207
+                ],
+                "width": 1.125,
+                "type": "esriSLS",
+                "style": "esriSLSSolid"
+            }
+        },
+        "mapIndicatorSymbol": {
+            "size": 9,
+            "angle": 0,
+            "xoffset": 0,
+            "yoffset": 0,
+            "type": "esriSMS",
+            "style": "esriSMSX",
+            "outline": {
+                "color": [
+                    255,
+                    0,
+                    0,
+                    255
+                ],
+                "width": 2,
+                "type": "esriSLS",
+                "style": "esriSLSSolid"
+            }
+        },
+        "measureIndicatorSymbol": {
+            "color": [
+                0,
+                197,
+                255,
+                204
+            ],
+            "size": 3,
+            "angle": 0,
+            "xoffset": 0,
+            "yoffset": 0,
+            "type": "esriSMS",
+            "style": "esriSMSSquare",
+            "outline": {
+                "color": [
+                    0,
+                    197,
+                    255,
+                    207
+                ],
+                "width": 1.125,
+                "type": "esriSLS",
+                "style": "esriSLSSolid"
+            }
+        }
+    },
+    "URLS": {
+        "GeometryServer": "https://arcgis.improntait.corm/arcgis102/rest/services/Utilities/Geometry/GeometryServer",
+        "demURL": "https://arcgis.improntait.com/arcgis1071/rest/services/TECP_ET/TECP_MAPA_DEM_ET/MapServe"
+    },
+    "form": {
+        "dxConfirmButton": {
+            "divId": "iElevationProfile_dxConfirmButton",
+            "icon": " iElevationProfile_dxConfirmButtonIcon ",
+            "text": "BUSCAR EN NLS",
+            "hint": "BUSCAR EN NLS",
+            "hintActive": "BUSCAR EN NLS",
+            "type": "",
+            "iconActive": " iElevationProfile_dxConfirmButtonIcon ",
+            "activateByDefault": true,
+            "height": 32,
+            "disabled": true
+        },
+        "dxDrawPolyline": {
+            "divId": "iElevationProfile_drawPolyline",
+            "icon": " iElevationProfile_drawPolylineicon ",
+            "text": "BUSCAR EN NLS",
+            "hint": "Presione para habilitar la locaci�n en el mapa al hacer click.",
+            "hintActive": "Presione para deshabilitar la locaci�n en el mapa al hacer click.",
+            "type": "",
+            "iconActive": " iElevationProfile_drawPolylineicon_active ",
+            "activateByDefault": true,
+            "height": 32
+        },
+        "dxDrawFreeHandPolyline": {
+            "divId": "iElevationProfile_drawFreeHandPolyline",
+            "icon": " iElevationProfile_drawFreeHandPolylineicon ",
+            "text": "BUSCAR EN NLS",
+            "hint": "Presione para habilitar la locaci�n en el mapa al hacer click.",
+            "hintActive": "Presione para deshabilitar la locaci�n en el mapa al hacer click.",
+            "type": "",
+            "iconActive": " iElevationProfile_drawFreeHandPolylineicon_active ",
+            "activateByDefault": true
+        },
+        "dxProfileSelection": {
+            "divId": "iElevationProfile_selection",
+            "icon": " iElevationProfile_selectionicon ",
+            "text": "BUSCAR EN NLS",
+            "hint": "Presione para habilitar la locaci�n en el mapa al hacer click.",
+            "hintActive": "Presione para deshabilitar la locaci�n en el mapa al hacer click.",
+            "type": "",
+            "iconActive": " iElevationProfile_selectionicon_active ",
+            "activateByDefault": true,
+            "height": 32
+        },
+        "dxSelectBoxMeasureType": {
+            "divId": "iElevationProfile_dxSelectBoxMeasureType",
+            "dataSource": "BUSCAR EN NLS",
+            "displayExpr": "text",
+            "valueExpr": "measureType",
+            "value": "Meters"
+        },
+        "dxSwitchUseStepWithDraw": {
+            "divId": "iElevationProfile_dxSwitchUseStepWithDraw",
+            "hint": "BUSCAR EN NLS",
+            "onText": "BUSCAR EN NLS",
+            "offText": "BUSCAR EN NLS",
+            "value": true,
+            "width": "80"
+        },
+        "dxSwitchUseSteps": {
+            "divId": "iElevationProfile_dxSwitchUseStepUseSteps",
+            "hint": "BUSCAR EN NLS",
+            "onText": "BUSCAR EN NLS",
+            "offText": "BUSCAR EN NLS",
+            "value": true,
+            "width": "80"
+        },
+        "dxSwitchUseStepWithSelect": {
+            "divId": "iElevationProfile_dxSwitchUseStepWithSelect",
+            "hint": "BUSCAR EN NLS",
+            "onText": "BUSCAR EN NLS",
+            "offText": "BUSCAR EN NLS",
+            "value": false,
+            "width": "80"
+        },
+        "dxNumberBoxStepValue": {
+            "divId": "iElevationProfile_inputStepValue",
+            "hint": "Dividir l�nea en...",
+            "placeHolder": "1000 metros",
+            "showClearButton": false,
+            "min": 1,
+            "max": 100000000000,
+            "initalValue": 20
+        },
+        "dxSelectBoxStepType": {
+            "divId": "iElevationProfile_dxSelectBoxStepType",
+            "dataSource": "BUSCAR EN NLS",
+            "displayExpr": "text",
+            "valueExpr": "measureType",
+            "value": "9001"
+        },
+        "dxSelectBoxResolution": {
+            "divId": "iElevationProfile_dxSelectBoxResolution",
+            "dataSource": "BUSCAR EN NLS",
+            "displayExpr": "text",
+            "valueExpr": "resolution",
+            "value": "5m"
+        }
+    },
+    "toastError": {
+        "divId": "elevationProfile-dxToastError",
+        "message": "SE USAN MENSAJES QUE VIENEN DE NLS",
+        "type": "warning",
+        "displayTime": 3000,
+        "position": {
+            "my": "center",
+            "at": "center",
+            "of": "#dijit__WidgetBase_6"
+        },
+        "width": 390
+    },
+    "graphicLayers": [
+        {
+            "name": "IM_ElevationProfileGraphicLayer",
+            "id": "IM_ElevationProfileGraphicLayer",
+            "handleDragAndDrop": false
+        },
+        {
+            "name": "IM_ElevationProfileDisplayLocator",
+            "id": "IM_ElevationProfileDisplayLocator",
+            "handleDragAndDrop": false
+        }
+    ],
+    "operations": {
+        "ElevationProfileDrawing": {
+            "graphicLayer": "IM_ElevationProfileGraphicLayer"
+        },
+        "DisplayLocator": {
+            "graphicLayer": "IM_ElevationProfileDisplayLocator"
+        }
+    },
+    "mainDataGrid": {
+        "divId": "_dxDataGridNode",
+        "allowColumnResizing": true,
+        "allowColumnReordering": true,
+        "cacheEnabled": true,
+        "columnChooser": {
+            "enabled": false
+        },
+        "columnAutoWidth": true,
+        "columns": [
+            {
+                "dataField": "Vertex",
+                "caption": "#",
+                "width": "5%",
+                "visible": true,
+                "format": {
+                    "type": "fixedPoint",
+                    "precision": 0
+                }
+            },
+            {
+                "dataField": "X",
+                "caption": "Coord. X",
+                "width": "14%",
+                "visible": true,
+                "format": {
+                    "type": "fixedPoint",
+                    "precision": 2
+                }
+            },
+            {
+                "dataField": "Y",
+                "caption": "Coord. Y",
+                "width": "14%",
+                "visible": true,
+                "format": {
+                    "type": "fixedPoint",
+                    "precision": 2
+                }
+            },
+            {
+                "dataField": "Z",
+                "caption": "Elevaci\u00F3n [m] ",
+                "width": "16%",
+                "visible": true,
+                "format": {
+                    "type": "fixedPoint",
+                    "precision": 2
+                }
+            },
+            {
+                "dataField": "M",
+                "caption": " Longitud 2D [m] ",
+                "width": "20%",
+                "visible": true,
+                "format": {
+                    "type": "fixedPoint",
+                    "precision": 2
+                }
+            },
+            {
+                "dataField": "L",
+                "caption": "Longitud 3D [m]",
+                "width": "19%",
+                "visible": true,
+                "format": {
+                    "type": "fixedPoint",
+                    "precision": 2
+                }
+            },
+            {
+                "dataField": "Pend",
+                "caption": "Pendiente [\u00B0]",
+                "width": "12%",
+                "visible": true,
+                "format": {
+                    "type": "fixedPoint",
+                    "precision": 2
+                }
+            },
+            {
+                "dataField": "X_distance",
+                "caption": "X Distance",
+                "width": "0",
+                "visible": false,
+                "format": {
+                    "type": "fixedPoint",
+                    "precision": 2
+                }
+            }
+        ],
+        "columnResizingMode": "nextColumn",
+        "export": {
+            "enabled": false,
+            "allowExportSelectedData": true
+        },
+        "filterRow": {
+            "showOperationChooser": false,
+            "visible": false
+        },
+        "headerFilter": {
+            "height": 300,
+            "texts": {
+                "cancel": "Cancelar",
+                "emptyValue": "(Blanks)",
+                "ok": "Aceptar"
+            },
+            "visible": false,
+            "width": 250
+        },
+        "height": "50%",
+        "hoverStateEnabled": true,
+        "loadPanel": {
+            "enabled": true
+        },
+        "noDataText": "No hay datos.",
+        "paging": {
+            "enabled": false,
+            "pageIndex": 0,
+            "pageSize": 100
+        },
+        "pager": {
+            "allowedPageSizes": [
+                20,
+                100,
+                200
+            ],
+            "showPageSizeSelector": false,
+            "showInfo": false,
+            "infoText": "{2} ({3}) Vertices de {4}.",
+            "showNavigationButtons": false
+        },
+        "rowAlternationEnabled": true,
+        "selection": {
+            "allowSelectAll": false,
+            "mode": "none"
+        },
+        "showBorders": true,
+        "showColumnHeaders": true,
+        "showColumnLines": true,
+        "showRowLines": true,
+        "scrolling": {
+            "mode": "Standard",
+            "showScrollbar": "always"
+        },
+        "sorting": {
+            "ascendingText": "Orden Ascendente",
+            "clearText": "Limpiar Orden",
+            "descendingText": "Orden Descendente",
+            "mode": "none"
+        },
+        "stateStoring": {
+            "enabled": true,
+            "savingTimeout": 1000,
+            "storageKey": "mainDataGridPerfilTopografico",
+            "type": "localStorage"
+        },
+        "wordWrapEnabled": true,
+        "width": "571px",
+        "enableMasterDetailViews": false,
+        "enableMultipleMasterDetailViews": false
+    },
+    "errors": {
+        "error_no_line_drawn": "Debe dibujar una línea, los datos deben ser validos."
+    }
+}

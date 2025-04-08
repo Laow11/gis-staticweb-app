@@ -1,0 +1,22 @@
+{
+    "configText":"GoToXY",
+    "mapbasemap": "satellite",
+    "mapcenter": [136, 35],
+    "mapzoom": 2,
+    "URLS": {
+        "demUrl": ""
+    },
+    "sysRef": {
+        "outputSys": ""
+    },
+    "mapslider": false,    
+    "symbols": {
+        "coordpicturemarkersymbol": {
+          "type": "esriPMS",
+          "url": "images/i_pin1.png",
+          "contentType": "image/png",
+          "width": 20,
+          "height": 20
+        }
+    }  
+}

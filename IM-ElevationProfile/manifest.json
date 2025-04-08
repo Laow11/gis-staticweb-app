@@ -1,0 +1,25 @@
+{
+  "name": "ElevationProfile",
+  "label": "Perfil Topográfico",
+  "platform": "HTML",
+  "type": "widget",
+  "version": "2.6",
+  "wabVersion": "2.6",
+  "author": "ImprontaIT - Gonzalo Gorosito",
+  "description": "",
+  "copyright": "2017",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "properties": {
+    "hasVersionManager": false,
+    "inPanel": true,
+    "hasLocale": true,
+    "hasStyle": true,
+    "hasConfig": true,
+    "hasUIFile": true,
+    "hasSettingPage": true,
+    "hasSettingUIFile": true,
+    "hasSettingLocale": true,
+    "hasSettingStyle": true,
+    "IsController": false
+  }
+}

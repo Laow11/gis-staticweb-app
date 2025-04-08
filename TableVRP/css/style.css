@@ -1,0 +1,132 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("dx.common.css");
+/*@import url("dx.light.css");*/
+@import url("dx.material.blue.light.compact.css");
+
+.tabs-demo {
+  display: flex;
+}
+
+.dx-tabs {
+  max-width: 100%;
+}
+
+.dx-tabs-vertical {
+  height: 216px;
+}
+
+.dx-viewport:not(.dx-theme-generic) .dx-tabs-horizontal {
+  border-block-end: 1px solid rgb(225, 225, 225, 0.4);
+}
+
+.dx-viewport:not(.dx-theme-generic) .dx-tabs-vertical {
+  height: 232px;
+  border-inline-end: 1px solid rgb(225, 225, 225, 0.4);
+}
+
+.dx-datagrid-header-panel  .dx-toolbar .dx-toolbar-items-container {
+    height: 0px !important; 
+    overflow: visible;
+}
+
+.dx-datagrid-header-panel .dx-toolbar-after {
+    top: -30px !important;
+}
+
+.disabled-tab {
+    pointer-events: none;
+    opacity: 0.5; /* Cambia la opacidad para simular que está deshabilitado */
+}
+
+.dx-pager .dx-pages .dx-page {
+    padding: 3px 6px !important;
+    line-height: 13px !important;
+}
+
+.dx-gridbase-container > * {
+    flex: initial !important; /* Anula el estilo anterior */
+}
+
+.dx-pages {
+    height: 40px !important;
+}
+
+#zoomIcon:hover {
+    color: #fff;
+    cursor: pointer
+}
+
+.location-icon {
+    margin-right: 5px; /* Añadir un pequeño margen entre los íconos */
+}
+
+.icon-container {
+    display: flex; /* Hacer que los íconos estén en línea */
+}
+
+span.lm_title {
+    visibility: hidden !important;
+}
+
+.dx-datagrid .dx-row>td {
+     padding: 5px 11px; 
+     font-size: 12px; 
+     line-height: 13px; 
+}
+
+.dx-editor-cell .dx-texteditor .dx-texteditor-input {
+    background: rgba(255,255,255,0);
+    font-size: 12px;
+    height: 24px;
+    line-height: 8px;
+    padding: 2px 4px;
+    margin-top: 0;
+}
+
+#borrarFiltrosBtn {
+    /* Estilos por defecto del botón */
+     border-radius: 50%; /* Hace que el botón tenga bordes redondeados */
+}
+
+#borrarFiltrosBtn:hover {
+    /* Estilos cuando el cursor está sobre el botón */
+    background-color: #f0f0f0; /* Cambiar el color de fondo */
+    cursor: pointer; /* Cambiar el cursor a una mano */
+}
+
+#borrarFiltrosBtn:active {
+    /* Estilos cuando se hace clic en el botón */
+    background-color: #e0e0e0; /* Cambiar el color de fondo */
+}
+
+.error-cell {
+    background-color: #FFEBEE; /* Cambia el color de fondo a rojo claro */
+    border: 1px solid #FF5252; /* Agrega un borde rojo */
+    color: #FF5252; /* Cambia el color del texto a rojo */
+}
+
+#exportExcelBtn {
+    /* Estilos por defecto del botón */
+     border-radius: 50%; /* Hace que el botón tenga bordes redondeados */
+}
+
+#exportExcelBtn:hover {
+    /* Estilos cuando el cursor está sobre el botón */
+    background-color: #f0f0f0; /* Cambiar el color de fondo */
+    cursor: pointer; /* Cambiar el cursor a una mano */
+}
+
+#exportExcelBtn:active {
+    /* Estilos cuando se hace clic en el botón */
+    background-color: #e0e0e0; /* Cambiar el color de fondo */
+}
+.dx-icon-xlsfile {
+    background: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+.dx-icon-xlsfile::before {
+    background: none !important;
+    border: none !important;
+}

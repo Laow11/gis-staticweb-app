@@ -1,0 +1,14 @@
+{
+  "name": "IM - measurement",
+  "platform": "HTML",
+  "version": "2.6",
+  "wabVersion": "2.6",
+  "author": "Esri R&D Center Beijing - Custom editon by IMPRONTAIT",
+  "description": "",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "properties": {
+    "hasVersionManager": true,
+    "hasStyle": true
+  }
+}

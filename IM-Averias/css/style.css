@@ -1,0 +1,179 @@
+@import url("all.css");
+@import url("../libs/devExpress/css/dx.common.css");
+@import url("../libs/devExpress/css/dx.light.css") ;
+
+.jimu-widget-filter-demo .hidden{display: none !important;}
+#dojox_layout_ResizeHandle_12{
+  display: none;
+}
+.dx-datagrid-rowsview .dx-row > td {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  word-wrap: break-word !important;
+  white-space: nowrap !important;
+}
+.dx-datagrid-content .dx-datagrid-table .dx-row > td {
+  *overflow: hidden;
+  *text-overflow: ellipsis;
+  vertical-align: middle !important;
+}
+.dojoxResizeHandle.dojoxResizeNW{
+  display: none !important;
+}
+.dx-texteditor-input{
+  padding-left: 5px !important;
+  font-size: 12px !important;
+  text-align: center !important;
+}
+#gridAverias, #gridOT{
+    font-size: 10.5px!important;
+}
+#gridOT{
+  max-width: 1700px !important;
+}
+
+#eliminarAveriaButton{
+  background:linear-gradient(to bottom, #8a1e03 5%, #cf6b57 100%);
+  background-color:#8a1e03;
+}
+
+#desestimarOTButton{
+  background:linear-gradient(to bottom, #8a1e03 5%, #cf6b57 100%);
+  background-color:#8a1e03;
+}
+
+#desestimarOTButton:hover{
+  background:linear-gradient(to bottom, #b54428 5%, #cf6b57 100%);
+  background-color:#b54428;
+}
+
+#eliminarAveriaButton:hover {
+  background:linear-gradient(to bottom, #b54428 5%, #cf6b57 100%);
+  background-color:#b54428;
+}
+.title{
+  margin-bottom: 9px !important;
+}
+.jimu-widget-frame.jimu-container{
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+.jimu-panel.jimu-on-screen-widget-panel.jimu-main-background{
+  *width: 808px !important;
+  *height: 430px !important;
+}
+.dx-widget.dx-visibility-change-handler.dx-collection.dx-menu-base.dx-datagrid.dx-cell-focus-disabled.dx-filter-menu.dx-menu{
+  display: none !important;
+}
+.dx-datagrid-rowsview .dx-row.dx-row-lines:first-child > td {
+  text-align: center !important;
+}
+.dx-datagrid-content .dx-datagrid-table .dx-row > td{
+  text-align: center !important;
+}
+.dx-datagrid-rowsview .dx-row.dx-row-lines:first-child > td
+.dx-texteditor-input{
+  padding-left: 2px !important;
+}
+
+.dx-texteditor-input{
+  padding-left: 0px !important;
+}
+
+#selectAprobado, #selectRevisado{
+  width: 160px;
+  text-align: center;
+}
+
+#verTodos{
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+#verTodos:hover{
+    padding: 10px;
+    background-color: #00838f !important;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    
+}
+
+#verTodos:active{
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+     -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+          box-shadow: inset 0px 0px 5px #c1c1c1;
+   outline: none;
+}
+
+.buttonContainer{
+    margin-right: 14px;
+}
+
+.title{
+    font-size: 17px;
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 15px;
+}
+/* #gridAverias .dx-datagrid-rowsview .dx-selection.dx-row > td,
+#gridAverias.dx-datagrid-rowsview .dx-selection.dx-row:hover > td {
+  background-color: (255, 255, 255, 0);
+}
+
+#gridAverias .dx-datagrid-rowsview .dx-selection.dx-row > td.dx-focused,
+#gridAverias .dx-datagrid-rowsview .dx-selection.dx-row:hover > td.dx-focused {
+  background-color: (255, 255, 255, 0);
+}
+
+#gridOT .dx-datagrid-rowsview .dx-selection.dx-row > td,
+#gridOT.dx-datagrid-rowsview .dx-selection.dx-row:hover > td {
+  background-color: (255, 255, 255, 0);
+}
+
+#gridOT .dx-datagrid-rowsview .dx-selection.dx-row > td.dx-focused,
+#gridOT .dx-datagrid-rowsview .dx-selection.dx-row:hover > td.dx-focused {
+  background-color: (255, 255, 255, 0);
+}
+
+#gridOT .dx-data-row.dx-state-hover:not(.dx-selection):not(.dx-row-inserted):not(.dx-row-removed):not(.dx-edit-row) > td:not(.dx-focused) {
+    background-color: (255, 255, 255, 0);
+  }
+  #gridOT .dx-data-row.dx-state-hover:not(.dx-selection):not(.dx-row-inserted):not(.dx-row-removed):not(.dx-edit-row) > td:not(.dx-focused).dx-datagrid-group-space {
+    border-right-color: (255, 255, 255, 0);
+  }
+  #gridOT .dx-data-row.dx-state-hover:not(.dx-selection):not(.dx-row-inserted):not(.dx-row-removed):not(.dx-edit-row) > .dx-datagrid-readonly .dx-texteditor .dx-texteditor-input {
+    background-color: (255, 255, 255, 0);
+  }
+  #gridOT .dx-data-row.dx-state-hover:not(.dx-selection):not(.dx-row-inserted):not(.dx-row-removed):not(.dx-edit-row) > td.dx-pointer-events-none {
+    background-color: (255, 255, 255, 0);
+  }
+
+  #gridAverias .dx-data-row.dx-state-hover:not(.dx-selection):not(.dx-row-inserted):not(.dx-row-removed):not(.dx-edit-row) > td:not(.dx-focused) {
+    background-color: (255, 255, 255, 0);
+  }
+  #gridAverias .dx-data-row.dx-state-hover:not(.dx-selection):not(.dx-row-inserted):not(.dx-row-removed):not(.dx-edit-row) > td:not(.dx-focused).dx-datagrid-group-space {
+    border-right-color: (255, 255, 255, 0);
+  }
+  #gridAverias .dx-data-row.dx-state-hover:not(.dx-selection):not(.dx-row-inserted):not(.dx-row-removed):not(.dx-edit-row) > .dx-datagrid-readonly .dx-texteditor .dx-texteditor-input {
+    background-color: (255, 255, 255, 0);
+  }
+  #gridAverias .dx-data-row.dx-state-hover:not(.dx-selection):not(.dx-row-inserted):not(.dx-row-removed):not(.dx-edit-row) > td.dx-pointer-events-none {
+    background-color: (255, 255, 255, 0);
+  } */
+
+  #statusInfo{
+    transition: all 0.2s ease-out;
+  }
+
+  .filters{
+      height: 35px;
+  }
+
+  #gridOT tr, #gridAverias tr{
+        cursor: pointer;
+  }
+
+  .dx-popover-wrapper .dx-popup-content {  
+    white-space: normal!important;  
+ }  

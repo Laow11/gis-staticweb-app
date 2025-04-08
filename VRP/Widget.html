@@ -1,0 +1,443 @@
+<div id="widget">
+    <!-- Sección Orders -->
+    <div style="margin-top:0.5em; margin-bottom: 0.5em;">
+        <div class="analysisTitle">
+            <table class="esriFormTable">
+                <tr>
+                    <td style="padding: 0.25em; width: 32px; height: 32px;">
+                        <div id="VRPIcon">
+                        </div>
+                    </td>
+                    <td>
+                        <label class="labelVRP">
+                            Vehicle Routing Problem
+                        </label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div style="clear:both; border-bottom: #CCC thin solid; height:1px;width:100%;">
+        </div>
+    </div>
+    <!-- Sección 0 Carga Json-->
+    <div class="sectionVRP" data-dojo-attach-point="divPlanar1" style="display:block">
+        <table class="center2" style="width: 100%">
+            <tr>
+                <td style="padding: 0.35em">
+                    <label class="labelVRP esriFloatLeading esriTrailingMargin025 esriAnalysisNumberLabel">
+                        1
+                    </label>
+                    <label class="labelVRP esriAnalysisStepsLabel">
+                        Elegir el caso de uso.
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding: 0.35em">
+                    <div id="dropdownContainer"></div>
+                    <div>                        
+                        <span class="spanVRP" data-dojo-attach-point="statusNombre" id="statusNombre" style="display: block; text-align: center; color: #888; font-size: 14px;">
+                        </span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding: 0.35em">
+                    <label class="labelVRP esriFloatLeading esriTrailingMargin025 esriAnalysisNumberLabel">
+                        2
+                    </label>
+                    <label class="labelVRP esriAnalysisStepsLabel">
+                        Obtener órdenes de ServiceMax.
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding: 0.35em">
+                    <div id="ctnBtnOrdenes" style="display: flex; justify-content: space-between;">
+                        <div id="btnOrdenes"></div>
+                        <div data-dojo-attach-point="VRPLoad3" id="VRPLoad3" style="display:none"></div>
+                        <div id="uploadButton"></div>
+                        <!--button id="uploadButton">Cargar Excel</button-->
+                        <input type="file" id="excelInput" accept=".xls,.xlsx" style="display: none;" />
+                    </div>
+                    <div id="SpanButton" style="display: flex; justify-content: space-between;">
+                        <div style="text-align: left;">
+                            <span class="spanVRP" data-dojo-attach-point="statusJsonOrders" id="statusJsonOrders" style="display: block; text-align: center; color: #888; font-size: 14px;">
+                            </span>
+                        </div>
+                        <div class="widget-container" id="contBtnReload" style="text-align: right; display: none;">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- Sección 1 Carga Almuerzo-->
+    <div class="sectionVRP" data-dojo-attach-point="divPlanar6" style="display:block">
+        <label class="labelVRP esriFloatLeading esriTrailingMargin025 esriAnalysisNumberLabel">
+            3
+        </label>
+        <label class="labelVRP esriAnalysisStepsLabel">
+            Cargar Almuerzo.
+        </label>
+        <div class="dropdownContainer">
+            <div class="dropdownItem2">
+                <label class="dropdownLabel2" style="font-size: 14px; text-align: left; padding: 0.35em">
+                    Almuerzo:
+                </label>
+                <div id="myDivAlmuerzo" style="width: 100px">
+                </div>
+            </div>
+            <div class="dropdownItem2">
+                <label class="dropdownLabel2" style="font-size: 14px; text-align: left; padding: 0.35em">
+                    Tiempo almuerzo:
+                </label>
+                <div id="myDivST" style="width: 100px">
+                </div>
+            </div>
+            <div class="dropdownItem2">
+                <label class="dropdownLabel2" style="font-size: 14px; text-align: left; padding: 0.35em">
+                    Ventana de llegada (Desde):
+                </label>
+                <div id="myDivTimeS" style="width: 100px">
+                </div>
+            </div>
+            <div class="dropdownItem2">
+                <label class="dropdownLabel2" style="font-size: 14px; text-align: left; padding: 0.35em">
+                    Ventana de llegada (Hasta):
+                </label>
+                <div id="myDivTimeE" style="width: 100px">
+                </div>
+            </div>
+            <div class="dropdownContainer" data-dojo-attach-point="divAlmuerzoDropDown" style="display:none">
+                <div class="dropdownItem2">
+                    <label class="dropdownLabel2" style="font-size: 14px; text-align: left; padding: 0.35em">
+                        Comedor:
+                    </label>
+                    <div id="ddDAlmContainer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+        <!-- Sección 1 Carga Depots-->
+        <div class="sectionVRP" data-dojo-attach-point="divPlanar3" style="display:block">
+            <label class="labelVRP esriFloatLeading esriTrailingMargin025 esriAnalysisNumberLabel">
+                4
+            </label>
+            <label class="labelVRP esriAnalysisStepsLabel">
+                Seleccionar Depósito.
+            </label>
+            <div class="dropdownContainer">
+                <div class="dropdownItem2">
+                    <label class="dropdownLabel2" style="font-size: 14px; font-family: 'Avenir Light', Sans-Serif; text-align: left; padding: 0.35em">
+                        Depósito inicio:
+                    </label>
+                    <div id="ddDStartContainer">
+                    </div>
+                </div>
+                <div class="dropdownItem2">
+                    <label class="dropdownLabel2" style="font-size: 14px; font-family: 'Avenir Light', Sans-Serif; text-align: left; padding: 0.35em">
+                        Depósito fin:
+                    </label>
+                    <div id="ddDEndContainer">
+                    </div>
+                    <!--select id="dropdown2" class="esri-dropdown-class2" style="padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px;"></select-->
+                </div>
+            </div>
+        </div>
+        <br>
+            <!-- Sección 2 Carga Routes-->
+            <div class="sectionVRP" data-dojo-attach-point="divPlanar5" style="display:block">
+                <label class="labelVRP esriFloatLeading esriTrailingMargin025 esriAnalysisNumberLabel">
+                    5
+                </label>
+                <label class="labelVRP esriAnalysisStepsLabel">
+                    Seleccionar Vehículos.
+                </label>
+                <div class="dropdownItem2">
+                    <label class="dropdownLabel2" style="font-size: 14px; text-align: left; padding: 0.35em">
+                        StartDepotServiceTime:
+                    </label>
+                    <div id="myDivStartDepot" style="width: 100px">
+                    </div>
+                </div>
+                <div class="dropdownItem2">
+                    <label class="dropdownLabel2" style="font-size: 14px; text-align: left; padding: 0.35em">
+                        EndDepotServiceTime:
+                    </label>
+                    <div id="myDivEndDepot" style="width: 100px">
+                    </div>
+                </div>
+                <div class="dropdownItem2">
+                    <label class="dropdownLabel2" style="font-size: 14px; text-align: left; padding: 0.35em">
+                        MaxTotalTime:
+                    </label>
+                    <div id="myDivMaxTotal" style="width: 100px">
+                    </div>
+                </div>
+                <!--<div class="dropdownItem2">
+                    <label class="dropdownLabel2" style="font-size: 14px; text-align: left; padding: 0.35em">
+                        OverTimeStarTime:
+                    </label>
+                    <div id="myDivOverTime" style="width: 100px">
+                    </div>
+                </div>-->
+                <br>    
+                <div class="dropdownItem2">
+                    <label class="dropdownLabel2" style="font-size: 14px; font-family: 'Avenir Light', Sans-Serif; text-align: left; padding: 0.35em">
+                        Seleccionar semana
+                    </label>
+                    <div id="ddSemanaContainer"></div>
+                </div>
+                <div class="table-container">
+                    <br>
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Vehículos
+                                    </th>
+                                    <th>
+                                        Lunes
+                                    </th>
+                                    <th>
+                                        Martes
+                                    </th>
+                                    <th>
+                                        Miércoles
+                                    </th>
+                                    <th>
+                                        Jueves
+                                    </th>
+                                    <th>
+                                        Viernes
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="checkboxGrid">
+                                <!-- Filas y celdas se generarán dinámicamente con JavaScript -->
+                            </tbody>
+                        </table>
+                    </br>
+                </div>
+                <br>
+                    <span class="spanVRP" data-dojo-attach-point="statusRoutes" id="statusRoutes" style="display: block; text-align: center; color: #888; font-size: 14px;">
+                    </span>
+                </br>
+            </div>
+            <!-- Sección 3 Carga Json OPCIONALES-->
+           <!-- <div id="colOpcionales">
+                <button class="collapsibleOp">6. Opcionales <span class="iconOp">+</span></button>
+                <div class="contentDiv">
+                    <table class="center2" style="width: 100%">
+                        <tr>
+                            <td colspan="2" style="padding: 0.35em">
+                                <label style="font-size: 14px; font-family: 'Avenir Light', Sans-Serif; text-align: left; padding: 0.35em">
+                                    Breaks
+                                </label>
+                                <input class="inputVRP" data-dojo-attach-point="JsonBreaks" id="JsonBreaks" name="JsonBreaks" style="padding: 8px; border: 1px solid #ccc; border-radius: 4px; width: 100%;" type="file">
+                                        <span class="spanVRP" data-dojo-attach-point="statusBreaks" id="statusBreaks" style="display: block; text-align: center; color: #888; font-size: 14px;">
+                                        </span>
+                                </input>
+                                <label style="font-size: 14px; font-family: 'Avenir Light', Sans-Serif; text-align: left; padding: 0.35em">
+                                    Barriers (Point)
+                                </label>
+                                <input class="inputVRP" data-dojo-attach-point="JsonBarriersPoint" id="JsonBarriersPoint" name="JsonBarriersPoint" style="padding: 8px; border: 1px solid #ccc; border-radius: 4px; width: 100%;" type="file">
+                                        <span class="spanVRP" data-dojo-attach-point="statusBarriersPoint" id="statusBarriersPoint" style="display: block; text-align: center; color: #888; font-size: 14px;">
+                                        </span>
+                                </input>
+                                <label style="font-size: 14px; font-family: 'Avenir Light', Sans-Serif; text-align: left; padding: 0.35em">
+                                    Barriers (Line)
+                                </label>
+                                <input class="inputVRP" data-dojo-attach-point="JsonBarriersLine" disabled="" id="JsonBarriersLine" name="JsonBarriersLine" style="padding: 8px; border: 1px solid #ccc; border-radius: 4px; width: 100%;" type="file">
+                                </input>
+                                <label style="font-size: 14px; font-family: 'Avenir Light', Sans-Serif; text-align: left; padding: 0.35em">
+                                    Barriers (Polygon)
+                                </label>
+                                <input class="inputVRP" data-dojo-attach-point="JsonBarriersPolygon" disabled="" id="JsonBarriersPolygon" name="JsonBarriersPolygon" style="padding: 8px; border: 1px solid #ccc; border-radius: 4px; width: 100%;" type="file">
+                                </input>
+                                <label style="font-size: 14px; font-family: 'Avenir Light', Sans-Serif; text-align: left; padding: 0.35em">
+                                    Route Zones
+                                </label>
+                                <input class="inputVRP" data-dojo-attach-point="JsonRouteZones" disabled="" id="JsonRouteZones" name="JsonRouteZones" style="padding: 8px; border: 1px solid #ccc; border-radius: 4px; width: 100%;" type="file">
+                                </input>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div><br>-->
+            <!-- Sección 4 Parametros -->
+            <div id="colValores">
+                <button class="collapsibleVal">6. Valores análisis<span class="iconVal">+</span></button>
+                <div class="contentDiv">
+                    <table class="center2" style="width: 100%">
+                        <tr data-dojo-attach-point="_selectAnalysisRow">
+                            <td style="font-size: 14px; font-family: 'Avenir Light', Sans-Serif; text-align: left; padding: 0.35em">
+                                <p>
+                                    Time Units:
+                                </p>
+                            </td>
+                            <td style="text-align: right;">
+                                <div id="myDivTimeUnits" style="width: 100%"></div>
+                            </td>
+                        </tr>
+                        <tr data-dojo-attach-point="_selectAnalysisRow">
+                            <td style="font-size: 14px; font-family: 'Avenir Light', Sans-Serif; text-align: left; padding: 0.35em">
+                                <p>
+                                    Distance Units:
+                                </p>
+                            </td>
+                            <td style="text-align: right;">
+                                <div id="myDivDistanceUnits" style="width: 100%"></div>
+                            </td>
+                        </tr>
+                        <tr data-dojo-attach-point="_selectAnalysisRow">
+                            <td style="font-size: 14px; font-family: 'Avenir Light', Sans-Serif; text-align: left; padding: 0.35em">
+                                <p>
+                                    Populates Directions:
+                                </p>
+                            </td>
+                            <td style="text-align: right;">
+                                 <div id="myDivPopulateDirections" style="width: 100%"></div>
+                            </td>
+                        </tr>
+                        <tr data-dojo-attach-point="_selectAnalysisRow" style="display:none">
+                            <td style="font-size: 14px; font-family: 'Avenir Light', Sans-Serif; text-align: left; padding: 0.35em">
+                                <p>
+                                    Populate Stop:
+                                </p>
+                            </td>
+                            <td style="text-align: right;">
+                                <div id="myDivPopulateStopShapes" style="width: 100%"></div>
+                            </td>
+                        </tr>
+                        <tr data-dojo-attach-point="_selectAnalysisRow">
+                            <td style="font-size: 14px; font-family: 'Avenir Light', Sans-Serif; text-align: left; padding: 0.35em">
+                                <p>
+                                    Directions Language:
+                                </p>
+                            </td>
+                            <td style="text-align: right;">
+                                <div id="myDivDirectionsLanguage" style="width: 100%"></div>
+                            </td>
+                        </tr>
+                        <tr data-dojo-attach-point="_selectAnalysisRow" style="display:none">
+                            <td style="font-size: 14px; font-family: 'Avenir Light', Sans-Serif; text-align: left; padding: 0.35em">
+                                <p>
+                                    Save output layer:
+                                </p>
+                            </td>
+                            <td style="text-align: right;">
+                                <div id="myDivSaveOutputLayer" style="width: 100%"></div>
+                            </td>
+                        </tr>
+                        <tr data-dojo-attach-point="_selectAnalysisRow">
+                            <td style="font-size: 14px; font-family: 'Avenir Light', Sans-Serif; text-align: left; padding: 0.35em">
+                                <p>
+                                    Save route data:
+                                </p>
+                            </td>
+                            <td style="text-align: right;">
+                                <div id="myDivSaveRouteData" style="width: 100%"></div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div><br>
+            <!-- Sección Mensajes Resultado-->
+            <div data-dojo-attach-point="divMsj" style="display:none;">
+                <table class="center2" style="width: 100%">
+                    <tr>
+                        <td colspan="2">
+                            <div class="VRPmessage-title">
+                                Mensajes
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1">
+                            <div class="VRPjob-message" data-dojo-attach-point="MsjEjec" style="display:none">
+                                Ejecutando script Solve Vehicle Routing Problem
+                            </div>
+                        </td>
+                        <td colspan="1">
+                            <div data-dojo-attach-point="VRPLoad" id="VRPLoad" style="display:none">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1">
+                            <div class="VRPjob-message" data-dojo-attach-point="MsjEjec1" id="MsjEjec1" style="display:none">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="VRPjob-message" data-dojo-attach-point="msjSecctionFin" id="msjSecctionFin" style="display:none">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="VRPjob-message" data-dojo-attach-point="msjFeature" style="display:none">
+                                Guardando datos y cargando FeatureServer
+                            </div>
+                        </td>
+                        <td colspan="1">
+                            <div data-dojo-attach-point="VRPLoad2" id="VRPLoad2" style="display:none">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="VRPjob-message" data-dojo-attach-point="msjSecctionFinFeature" id="msjSecctionFinFeature" style="display:none">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="VRPmessage-title" data-dojo-attach-point="MsjSalidas" style="display:none;">
+                                Salidas
+                            </div>
+                        </td>
+                    </tr>
+                    <!--
+                    <tr>
+                        <td>
+                            <div class="result-section">
+                                <div class="output-item">
+                                    <a data-dojo-attach-point="MsjSalidasURL1" href="" role="link" style="display:none; color: #51B1FE; display: inline-block; font-size: 12px; margin-top: 10px;" target="_blank">
+                                        Resultados VRP
+                                    </a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    -->
+                    <tr>
+                        <td>
+                            <div class="result-section">
+                                <div class="output-item">
+                                    <a data-dojo-attach-point="MsjSalidasURL2" href="" role="link" style="display:none; color: #51B1FE; display: inline-block; font-size: 12px; margin-top: 10px;" target="_blank">
+                                        Tablero VRP
+                                    </a>
+                                </div>
+                            </div><br>
+                        </td>
+                        <br>
+                        </br>
+                    </tr>
+                </table>
+            </div>
+            <!-- Sección Botonera -->
+            <div class="botoneraactions" data-dojo-attach-point="divPlanar4">
+                <div id="ddbtnEjecutar"></div>
+                <div id="ddbtnEnviar"></div>
+            </div>
+            <div data-dojo-attach-point="shelterVRP" data-dojo-props="hidden:true" data-dojo-type="jimu/dijit/LoadingShelter">
+            </div>
+        </br>
+    </br>
+</div>

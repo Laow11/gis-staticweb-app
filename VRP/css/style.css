@@ -1,0 +1,594 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("dx.common.css");
+/*@import url("dx.light.css");*/
+@import url("dx.material.blue.light.compact.css");
+
+.jimu-widget-panel .jimu-foldable-dijit .jimu-foldable-panel {
+  position:relative;
+  width:360px;
+  height:150px;
+  min-width:150px;
+  min-height:150px;
+}
+
+.jimu-widget-VRP {
+    font-size: 12px;
+    margin: auto;
+}
+
+
+.jimu-widget-VRP:hover {
+}
+
+.atributo1 {
+    position: relative;
+    width: 100%;
+    text-align: center !important;
+    align-content: center !important;
+}
+
+.atributo1>p {
+    position: relative;
+    display: inline;
+    width: 150px !important;
+}
+
+.atributo1>select {
+    position: relative;
+    display: inline;
+    width: 216px !important;
+    height: 28px !important;
+    font-size: 12px;
+}
+
+.atributo2 {
+    position: relative;
+    width: 100%;
+    text-align: center !important;
+    align-content: center !important;
+}
+
+.atributo2>p {
+    position: relative;
+    display: inline;
+    width: 150px !important;
+}
+
+.atributo2>select {
+    position: relative;
+    display: inline;
+    width: 216px !important;
+    height: 28px !important;
+    font-size: 12px;
+}
+
+.atributo3 {
+    position: relative;
+    width: 100%;
+    text-align: center !important;
+    align-content: center !important;
+}
+
+.atributo3>p {
+    position: relative;
+    display: inline;
+    width: 150px !important;
+}
+
+.atributo3>select {
+    position: relative;
+    display: inline;
+    width: 216px !important;
+    height: 28px !important;
+    font-size: 12px;
+}
+
+.atributo4 {
+    position: relative;
+    width: 100%;
+    text-align: center !important;
+    align-content: center !important;
+}
+
+.atributo4>p {
+    position: relative;
+    display: inline;
+    width: 150px !important;
+}
+
+.atributo4>select {
+    position: relative;
+    display: inline;
+    width: 216px !important;
+    height: 28px !important;
+    font-size: 12px;
+}
+
+.center1 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center2 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center3 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center4 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center5 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.leftC {
+    margin-left: initial !important;
+}
+
+#sisEntradaDropDown{
+    position: relative;
+    display: inline;
+    width: 216px !important;
+    height: 28px !important;
+    font-size: 12px;
+}
+
+#sisRefDropDown{
+    position: relative;
+    display: inline;
+    width: 216px !important;
+    height: 28px !important;
+    font-size: 12px;
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+input[type=number] { -moz-appearance:textfield; font-size: 12px; font-family: 'Avenir Light', sans-serif;}
+
+/*      body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #widget-container {
+            width: 402px;
+            height: 475px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+
+        input[type="file"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: calc(100% - 18px);
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        */
+
+        .sectionVRP {
+            margin-bottom: 0px;
+        }
+
+        .labelVRP {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .inputVRP {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: calc(100% - 18px);
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+        .spanVRP {
+            display: block;
+           /* text-align: center;*/
+            color: #888;
+            font-size: 12px;
+            padding: 0.35em;
+        }
+        .btnReload {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        /* Estilos para el icono de flecha */
+        .arrow-icon {
+            font-size: 24px;
+            color: white;
+            margin-left: 10px;
+        }
+        .btn-icon {
+            /* Agrega estilos para iconos si es necesario */
+        }
+
+        .divMsj {
+            display: none;
+            /* Estilos para el contenedor de mensajes */
+        }
+
+        #VRPIcon {
+            background-image: url(../images/VRP32.png);
+            width: 32px;
+            height: 32px;
+        }
+
+        #VRPLoad {
+            background-image: url(../images/loading.gif);
+            width: 16px;
+            height: 16px;
+        }
+
+        #VRPLoad2 {
+            background-image: url(../images/loading.gif);
+            width: 16px;
+            height: 16px;
+        }
+
+        #VRPLoad3 {
+            background-image: url(../images/loading.gif);
+            width: 16px;
+            height: 16px;
+            align-self: center;
+        }
+
+        .VrpImg-div {
+            text-indent: -9999em;
+            margin: auto;
+            position: absolute;
+            right: calc(50% - 0.425rem);
+            font-size: 11px;
+            animation-delay: 0.16s;
+        }
+        .VRPmessage-title {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #66696c;
+            font-weight: bold;
+        }
+        .VRPjob-message.success {
+            margin-top: 5px;
+            margin-bottom: 20px;
+            color: #00B050;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+        .VRPjob-messageSalida {
+            margin-top: 5px;
+            margin-bottom: 20px;
+            font-size: 12px;
+            color: #686868;
+        }
+         .VRPjob-message {
+            margin-top: 5px;
+            margin-bottom: 20px;
+            font-size: 12px;
+            color: #686868;
+        }
+        .inputError {
+          border: 1px solid red;
+        }
+
+        .VRPOutputText {
+          width: 85%;
+        }
+        .dijitTextBoxError .dijitInputInner {
+            border-color: red !important;
+        }
+        .esri-dropdown-class {
+          /* Agrega estilos modernos aquí */
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          padding: 8px;
+          font-size: 14px;
+          /* Otros estilos */
+        }
+        #MsjEjec1 p {
+          margin-bottom: 5px; /* Define el margen inferior deseado entre los párrafos */
+        }
+        .hzLinePopUp {
+            border: none;
+            border-top: 1px solid #333333;
+            margin-top: 6px;
+            margin-bottom: 6px;
+        }
+        .headerPopUp {
+            font-family: "Avenir Heavy";
+        }
+        .attrTablePopUp {
+            border-collapse: collapse;
+        }
+        .attrTablePopUp td.attrNamePopUp {
+            color: #888888;
+            padding-right: 5px;
+        }
+
+         .dropdownContainer {
+            /*display: flex;*/
+            flex-direction: column;
+            align-items: flex-start;
+            width: auto; /* Ancho del contenedor */            
+            margin-top: 10px; /* Espacio superior */
+        }
+
+        .dropdownItem {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        .dropdownItem2 {
+            display: flex; /* Utiliza el modelo de caja flexible */
+            justify-content: space-between; /* Distribuye los elementos a los extremos */
+            align-items: center; /* Centra verticalmente los elementos */
+        }
+
+        .dropdownLabel2 {
+            flex: 1; /* Hace que el label ocupe todo el espacio disponible */
+            margin-right: 10px; /* Margen derecho para separarlo del select */
+            text-align: left; /* Alinea el texto a la izquierda */            
+            font-size: 14px;
+            font-family: 'Avenir Light', Sans-Serif;
+        }
+
+        .botoneraactions {
+            display: flex; /* Utiliza el modelo de caja flexible */
+            justify-content: space-between; /* Distribuye los elementos a los extremos */
+            align-items: center; /* Centra verticalmente los elementos */
+        }
+        
+        .esri-dropdown-class2 {
+            flex: 1; /* Hace que el select ocupe todo el espacio disponible */
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+
+        .dropdownLabel {
+            width: 100px; /* Ancho de la etiqueta */
+            margin-right: 10px;
+            font-weight: bold;
+            font-size: 14px;
+            font-family: 'Avenir Light', Sans-Serif;
+        }
+
+        .customDropdown {
+            flex: 1;
+            padding: 8px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+       /* Establece el tamaño máximo del contenedor y muestra barras de desplazamiento si es necesario */
+        .table-container {
+            max-width: auto;
+            max-height: 300px;
+            overflow: auto;
+            position: relative; /* Añadido para que el thead fijo esté posicionado correctamente */
+        }
+
+        /* Ajusta el ancho de la tabla al contenido */
+        .custom-table {
+            width: max-content;
+            border-collapse: collapse;
+        }
+
+        /* Resto de estilos permanecen iguales */
+        .custom-table th,
+        .custom-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .custom-table th {
+            background-color: #f2f2f2;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+
+        .custom-tableLayers {
+            width: max-content;
+            border-collapse: collapse;
+        }
+
+        /* Resto de estilos permanecen iguales */
+        .custom-tableLayers th,
+        .custom-tableLayers td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .custom-tableLayers th {
+            background-color: #f2f2f2;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+
+        .table-container table {
+            width: 100%; /* Ajustado al 100% para que coincida con el contenedor */
+        }
+
+        .table-container thead th {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            background-color: #f2f2f2;
+            z-index: 2;
+        }
+
+        .rowAl {
+          display: flex;
+          flex-direction: row;
+        }
+
+        .leftAl {
+          flex: 1;
+          text-align: left;
+          padding-right: 10px;
+        }
+
+        .rightAl {
+          flex: 1;
+          text-align: right;
+        }
+
+        .centeredAl {
+          display: block;
+          margin: 0 auto;
+          text-align: left;
+        }
+
+
+        .jimu-widget-frame.jimu-container {
+            overflow-x: auto;
+            overflow-y: auto;
+            position: relative;
+            padding: 7px 7px 7px 7px !important;
+            background-color: white;
+        }
+
+
+        /*Edit Template ACTUALIZAR DSP DE CONFIGURAR EL TEMPLATE
+        .lm_header {
+            display: none;
+        }
+        .lm_splitter.lm_horizontal {
+            float: left;
+            height: 0% !important;
+        }
+
+        .jimu-dnd-layout {
+            top: 50px !important;
+        }
+
+        div#themes_DashboardTheme_widgets_Header_Widget_20 {
+            height: 50px !important;
+        }
+
+        .jimu-widget-dnd-header .logo {
+            cursor: pointer;
+            height: 40px;
+            margin: 10px 0 10px 20px;
+            border-right: 1px solid rgba(0, 0, 0, 0.2);
+            padding-right: 20px;
+        }
+        .jimu-widget-dnd-header .jimu-title {
+            height: 55%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            font-size: 20px;
+            margin: 0;
+        }
+        .lm_goldenlayout.lm_item.lm_root {
+            height: 100% !important;
+        }
+
+        */
+
+        /* Estilo para el botón colapsable */
+    .collapsibleOp {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 2px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .iconOp {
+      float: right;
+    }
+    /* Estilo para el contenido colapsable */
+    .contentDiv {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #f9f9f9;
+    }
+
+    .collapsibleVal {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 2px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .iconVal {
+      float: right;
+    }
+    .hover-highlight:hover {
+        background-color: #f0f0f0; /* Color de fondo resaltado */
+        cursor: pointer; /* Cambiar el cursor a una mano para indicar que es interactivo */
+    }
+    .lm_maximise {
+        visibility: hidden !important;
+    }
+
+    #uploadButton {
+        border: 2px solid #0078D4; /* Color del borde */
+        background: none; /* Fondo transparente */
+        color: #0078D4; /* Color del texto */
+        padding: 10px 20px; /* Espaciado interno */
+        font-size: 14px; /* Tamaño del texto */
+        cursor: pointer; /* Cursor de tipo puntero */
+        border-radius: 5px; /* Bordes redondeados */
+    }
+    
+    #uploadButton:hover {
+        background: #0078D4; /* Color de fondo al pasar el mouse */
+        color: white;
+    }

@@ -1,0 +1,174 @@
+///////////////////////////////////////////////////////////////////////////
+// Copyright © 2015 Esri Japan. All Rights Reserved.
+//
+// Licensed under the Apache License Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//    http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+///////////////////////////////////////////////////////////////////////////
+
+define([
+  'dojo/_base/declare',
+  'jimu/BaseWidget',
+  'jimu/utils',
+  'dijit/form/Button',
+  'esri/symbols/SimpleMarkerSymbol',
+  'esri/geometry/Point',
+  'esri/graphic',
+  'esri/layers/GraphicsLayer',
+  'esri/Color',
+  'dojo/on',
+  'dojo/_base/lang',
+  'esri/request'
+  
+  ],
+function(
+  declare,
+  BaseWidget,
+  utils,
+  Button,
+  SimpleMarkerSymbol,
+  Point,
+  Graphic,
+  GraphicsLayer,
+  Color,
+  on,
+  lang, esriRequest
+  ) {
+ 
+  return declare([BaseWidget], {
+
+    name: 'GoToXY',
+    baseClass: 'jimu-widget-GoToXY',
+    gsvc: "https://arcgis.improntait.com:18443/APPServer/CoordinatesConverterService.svc/GetSystems",
+    postCreate: function() {
+      console.log("postCreate!");
+	    var mapFrame = this;
+      this.inherited(arguments);
+      /*this.addPointsButton = new Button({
+        label: "Go to point"
+      }).placeAt(this.createPointIdNode);
+	  this.clearPointsButton = new Button({
+        label: "Clear points"
+      }).placeAt(this.removePointIdNode);*/
+      //this.addPointsButton.startup();
+      this._onGetSystem(this.gsvc);
+      document.addEventListener("wheel", function(event){
+          if(document.activeElement.type === "number"){
+              document.activeElement.blur();
+          }
+      });
+    },
+
+    _onGetSystem: function (urlGetSys) {            
+        debugger
+         try {
+          const data = {
+              f: 'json',
+              data: ''
+          };
+          jQuery.ajax({
+              method: 'POST',
+              url: urlGetSys,
+			  headers: {  'Access-Control-Allow-Origin': '*' },
+              dataType:'application/json; charset=utf-8',
+              data: data
+          }).done(d => {       
+            debugger     
+              let json = JSON.parse(d);              
+          }).fail(f => {
+            debugger
+              console.log(f, "err")
+          });
+        } catch (error) {
+          console.error(error);
+        }
+
+        /*
+            $.ajax({
+                    type: "POST",
+                    url: urlGetSys,
+                    data: '',
+                    dataType: "json",
+                    contentType: 'application/json; charset=utf-8',
+                    success: function (response) {
+                      debugger
+                    },
+                    error: function (error) {
+                      debugger
+                    }
+                })
+        */
+      },
+
+    startup: function() {
+	
+	  
+      console.log("startup!");
+	  
+      this.layer = new GraphicsLayer({
+        dataAttributes:["id"]
+      });
+      if (this.layer.surfaceType === "svg") {
+        on(this.layer, "graphic-draw", function (evt) {
+            console.log("graphic-draw");
+            var renderercategory;
+            renderercategory = "GoToXY";
+            evt.node.setAttribute("data-uniquevalue", renderercategory);
+        });
+      }
+      this.map.addLayer(this.layer);
+
+      on(this.addPointsButton, "click", lang.hitch(this, "createPoint"));
+	  on(this.clearPointsButton, "click", lang.hitch(this, "clearPoint"));
+      console.log("this.map: ", this.map);
+    },
+
+
+    createPoint: function() {
+	var xx=Number(document.getElementById("ProjXBox").value);
+	var yy=Number(document.getElementById("ProjYBox").value);
+	
+	
+	//document.getElementById("ProjYBox").style.backgroundColor = "white";
+	//document.getElementById("ProjXBox").style.backgroundColor = "white";
+      console.log("createPoint!");
+	  var ZoomIt = Number(3);
+      var sympath = "M16 0c-5.523 0-10 4.477-10 10 0 10 10 22 10 22s10-12 10-22c0-5.523-4.477-10-10-10zM16 16.125c-3.383 0-6.125-2.742-6.125-6.125s2.742-6.125 6.125-6.125 6.125 2.742 6.125 6.125-2.742 6.125-6.125 6.125zM12.125 10c0-2.14 1.735-3.875 3.875-3.875s3.875 1.735 3.875 3.875c0 2.14-1.735 3.875-3.875 3.875s-3.875-1.735-3.875-3.875z";
+      var symcolor = "#ce641d";
+      var sym = new SimpleMarkerSymbol();
+      sym.setPath(sympath);
+      sym.setColor(new Color(symcolor));
+      sym.setOutline(null);
+      sym.setSize("30");
+	   var randx = document.getElementById("ProjXBox").value;
+      var randy = document.getElementById("ProjYBox").value;
+      var attr = {"id":"rand"};
+	 
+      var zoomPoint = new esri.geometry.Point(Number(randx),Number(randy), this.map.spatialReference);
+      this.map.centerAndZoom(zoomPoint,3);       
+
+     
+      var pt = new Point(randx, randy, this.map.spatialReference);
+	  
+	 
+	  pntd=new Graphic(pt, sym, attr);
+      this.map.graphics.add(pntd);
+	 //}
+	 //}
+	  
+    },
+	clearPoint: function() {
+  this.map.graphics.clear();
+//this.map.removeLayer(this.layer)
+	} 
+  });
+
+});
