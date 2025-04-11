@@ -4,19 +4,11 @@
     "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
     "Access-Control-Allow-Headers": "Content-Type"
   },
-   "navigationFallback": {
-    "rewrite": "/index.html"
-  },
+
   "routes": [
     {
       "route": "/*",
       "allowedRoles": [ "authenticated" ]
     }
-  ],
-  "responseOverrides": {
-    "401": {
-      "statusCode": 302,
-      "redirect": "/.auth/login/aad"
-    }
-  }
+  ]
 }
